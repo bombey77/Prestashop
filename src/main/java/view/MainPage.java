@@ -1,26 +1,33 @@
 package view;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class MainPage {
 
     private WebDriver webDriver;
     private String mainPageTitle = "prestashop-automation";
-
     private String mainPage = "http://prestashop-automation.qatestlab.com.ua/ru/";
-    private String currncySign;
 
+    @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]")
     private WebElement currencySignButton;
-    private List<WebElement> popularGoods;
+
+    @FindBy(xpath = "//*[@id=\"_desktop_currency_selector\"]/div/ul/li[1]/a")
+    private WebElement eurElementCurrencySignButton;
+
+    @FindBy(xpath = "//*[@id=\"_desktop_currency_selector\"]/div/ul/li[3]/a")
+    private WebElement usdElementCurrencySignButton;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/section/div/*")
+    private List<WebElement> listPopularGoods;
 
     public MainPage(WebDriver webDriver) {
         this.webDriver = webDriver;
-//        currencySignButton = webDriver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]"));
+        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         PageFactory.initElements(webDriver, this);
     }
 
@@ -34,18 +41,33 @@ public class MainPage {
     }
 
     public void clickCurrencyDropDownButton() {
-        currencySignButton = webDriver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]"));
         currencySignButton.click();
     }
 
-    public String getCurrncySign() {
-        String sign = webDriver.findElement(By.xpath("//*[@id=\"_desktop_currency_selector\"]/div/span[2]")).getText();
-        char[] array = sign.toCharArray();
-        String res = String.valueOf(array[array.length-1]);
-        return res;
+    public void clickEURCurrencyDropDownButton() {
+        eurElementCurrencySignButton.click();
     }
 
+    public void clickUSDCurrencyDropDownButton() {
+        usdElementCurrencySignButton.click();
+    }
 
+    public String getCurrencySign() {
+        String textCurrencySignButton = currencySignButton.getText();
+        char[] array = textCurrencySignButton.toCharArray();
+        String currencySign = String.valueOf(array[array.length-1]);
+        return currencySign;
+    }
 
+    public List<WebElement> getListOfPopularGoods() {
+        return listPopularGoods;
+    }
 
+    public int getListSizeOfPopularGoods() {
+        return listPopularGoods.size();
+    }
+
+    public WebElement getCurrencySignButton() {
+        return currencySignButton;
+    }
 }

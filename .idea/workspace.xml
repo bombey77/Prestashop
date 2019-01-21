@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="" />
+    <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +23,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="44" column="19" selection-end-line="51" />
+            <state relative-caret-position="191">
+              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1534#1535#0" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1842#1843#0" expanded="true" />
+                <element signature="e#1894#1895#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+                <element signature="e#2293#2294#0" expanded="true" />
+                <element signature="e#2334#2335#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -27,10 +47,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+            <state relative-caret-position="1275">
+              <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="346" />
     <option name="y" value="81" />
     <option name="width" value="1400" />
@@ -70,78 +92,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="drivers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548088135147" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548108552835" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="D:/Selenium/selenium-java-3.141.59" />
@@ -172,9 +159,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTest.checkForUAHCurrency">
-    <configuration name="MainPageTest.checkForCurrencySign (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testmotovilovcom" />
+  <component name="RunManager" selected="TestNG.MainPageTest">
+    <configuration name="MainPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
@@ -183,7 +185,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="view" />
       <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkForCurrencySign" />
+      <option name="METHOD_NAME" value="checkClickUSDCurrencyDropDownButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,8 +193,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkForCurrencySign (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testmotovilovcom" />
+    <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
@@ -201,7 +203,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="view" />
       <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkForCurrencySign" />
+      <option name="METHOD_NAME" value="checkClickUSDCurrencyDropDownButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -209,8 +211,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkForCurrencySign (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testmotovilovcom" />
+    <configuration name="MainPageTest.checkForUAHCurrency (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Prestashop" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
@@ -219,25 +221,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="view" />
       <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkForCurrencySign" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainPageTest.checkForCurrencySign" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testmotovilovcom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkForCurrencySign" />
+      <option name="METHOD_NAME" value="checkForUAHCurrency" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -265,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTest" />
+        <item itemvalue="TestNG.MainPageTest.checkClickUSDCurrencyDropDownButton" />
+        <item itemvalue="TestNG.MainPageTest.checkClickUSDCurrencyDropDownButton (1)" />
         <item itemvalue="TestNG.MainPageTest.checkForUAHCurrency" />
-        <item itemvalue="TestNG.MainPageTest.checkForCurrencySign (3)" />
-        <item itemvalue="TestNG.MainPageTest.checkForCurrencySign" />
-        <item itemvalue="TestNG.MainPageTest.checkForCurrencySign (2)" />
-        <item itemvalue="TestNG.MainPageTest.checkForCurrencySign (1)" />
+        <item itemvalue="TestNG.MainPageTest.checkForUAHCurrency (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -283,64 +267,72 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548068795280</updated>
+      <workItem from="1548096641806" duration="9939000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 16h 25m 18s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 10m 32s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 16h 33m 59s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 16m 28s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 16h 39m 08s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 31m 40s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 16h 40m 23s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton - 2019.01.21 at 23h 41m 17s.xml">
+      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 16h 43m 36s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton_(1) - 2019.01.21 at 23h 42m 34s.xml">
+      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForCurrencySign_(3) - 2019.01.21 at 17h 07m 20s.xml">
-      <configuration name="MainPageTest.checkForCurrencySign (3)" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton - 2019.01.21 at 23h 44m 21s.xml">
+      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 17h 07m 47s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 51m 33s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 17h 13m 04s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 54m 27s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 17h 14m 24s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.21 at 23h 57m 12s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkForUAHCurrency - 2019.01.21 at 17h 17m 52s.xml">
-      <configuration name="MainPageTest.checkForUAHCurrency" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.22 at 00h 02m 25s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9939000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
@@ -376,6 +368,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
@@ -402,20 +401,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="44" column="19" selection-end-line="51" />
+        <state relative-caret-position="191">
+          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2293#2294#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+        <state relative-caret-position="1275">
+          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
           </folding>
         </state>
       </provider>
