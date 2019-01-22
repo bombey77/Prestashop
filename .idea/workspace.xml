@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,26 +17,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3223#3224#0" expanded="true" />
-                <element signature="e#3307#3308#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-                <element signature="e#3487#3488#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="181">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+              <folding>
+                <element signature="e#1925#1926#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#2019#2020#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
+                <element signature="e#2123#2124#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,13 +36,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state relative-caret-position="421">
+              <caret line="83" column="10" lean-forward="true" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1824#1825#0" expanded="true" />
                 <element signature="e#1869#1870#0" expanded="true" />
                 <element signature="e#2208#2216#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,7 +168,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548161635561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548166035902" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="D:/Selenium/selenium-java-3.141.59" />
@@ -200,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTest.checkTextInSearchedElements">
+  <component name="RunManager" selected="TestNG.MainPageTest">
     <configuration name="SearchPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.SearchPage" />
       <module name="Testmotovilovcom" />
@@ -229,7 +228,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkSearchByCatalog" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkCurrencySignInSearchedElements" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testmotovilovcom" />
       <extension name="coverage">
         <pattern>
@@ -239,7 +238,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="view" />
       <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkSearchByCatalog" />
+      <option name="METHOD_NAME" value="checkCurrencySignInSearchedElements" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -285,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainPageTest.checkTextInSearchedElements" />
         <item itemvalue="TestNG.MainPageTest" />
+        <item itemvalue="TestNG.MainPageTest.checkCurrencySignInSearchedElements" />
+        <item itemvalue="TestNG.MainPageTest.checkTextInSearchedElements" />
         <item itemvalue="TestNG.MainPageTest.checkSearchGoodsByCountOfElements" />
         <item itemvalue="Application.SearchPage" />
-        <item itemvalue="TestNG.MainPageTest.checkSearchByCatalog" />
       </list>
     </recent_temporary>
   </component>
@@ -308,35 +307,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 38m 16s.xml">
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 15h 51m 14s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 15h 52m 02s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 15h 52m 41s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 15h 56m 06s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 15h 57m 09s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 16h 00m 35s.xml">
       <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 39m 17s.xml">
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 16h 01m 08s.xml">
       <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 39m 38s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 16h 02m 20s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 40m 02s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 16h 03m 18s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 43m 22s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 47m 23s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 49m 01s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 49m 25s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 50m 17s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 50m 59s.xml">
-      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkCurrencySignInSearchedElements - 2019.01.22 at 16h 04m 19s.xml">
+      <configuration name="MainPageTest.checkCurrencySignInSearchedElements" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -416,6 +415,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/SearchPage.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -451,31 +462,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-            <element signature="e#3307#3308#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3487#3488#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="453" selection-start-line="453" selection-end-line="453" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="181">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state relative-caret-position="421">
+          <caret line="83" column="10" lean-forward="true" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1824#1825#0" expanded="true" />

@@ -63,7 +63,7 @@ public class SearchPage {
 
     public boolean findTextInSearchedElements(String text) {
         boolean contains = true;
-        searchByCatalog(text);
+//        searchByCatalog(text);
         List<WebElement> listOfSearchedElements = getListOfSearchedElements();
         List<String> listOfTitle = new ArrayList<String>();
 
@@ -77,5 +77,16 @@ public class SearchPage {
         }
         return contains;
     }
+
+    public boolean currencyOfItemInSearchList(MainPage mainPage, String text) {
+        if (!mainPage.getCurrencySign().equals("$")) {
+            mainPage.clickCurrencyDropDownButton();
+            mainPage.clickUSDCurrencyDropDownButton();
+        }
+        searchByCatalog(text);
+        return findTextInSearchedElements("$");
+    }
+
+
 
 }

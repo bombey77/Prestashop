@@ -87,10 +87,17 @@ public class MainPageTest {
         Assert.assertEquals(searchPage.getListOfSearchedElements().size(), searchPage.getCountOfSearchedElements());
     }
 
+    //тест падает, т.к. не все элементы поска содержат результат поиска
     @Ignore
     @Test
     public void checkTextInSearchedElements() {
+        searchPage.searchByCatalog(searchText);
         Assert.assertTrue(searchPage.findTextInSearchedElements(searchText));
+    }
+
+    @Test
+    public void checkCurrencySignInSearchedElements() {
+        Assert.assertTrue(searchPage.currencyOfItemInSearchList(mainPage, searchText));
     }
 
     @AfterMethod
