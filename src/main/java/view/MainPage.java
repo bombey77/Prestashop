@@ -85,15 +85,4 @@ public class MainPage {
         return currencySignButton;
     }
 
-//    public WebElement getFieldOfSearchedElements() {
-//        fieldOfSearchedElements = (new WebDriverWait(webDriver, 30))
-//                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//*[@id=\"js-product-list\"]/div/*)")));
-//        List<WebElement> webElementList = webDriver.findElements(By.xpath("(//*[@id=\"js-product-list\"]/div/*)"));
-//        System.out.println(webElementList.size());
-//        System.out.println(fieldOfSearchedElements.size());
-//        return fieldOfSearchedElements;
-//    }
-
-
-
 }

@@ -1,12 +1,9 @@
 package view;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -88,6 +85,12 @@ public class MainPageTest {
     public void checkSearchGoodsByCountOfElements() {
         searchPage.searchByCatalog(searchText);
         Assert.assertEquals(searchPage.getListOfSearchedElements().size(), searchPage.getCountOfSearchedElements());
+    }
+
+    @Ignore
+    @Test
+    public void checkTextInSearchedElements() {
+        Assert.assertTrue(searchPage.findTextInSearchedElements(searchText));
     }
 
     @AfterMethod

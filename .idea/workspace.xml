@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/SearchPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,13 +21,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+            <state relative-caret-position="351">
+              <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3223#3224#0" expanded="true" />
+                <element signature="e#3307#3308#0" expanded="true" />
                 <element signature="e#3455#3456#0" expanded="true" />
                 <element signature="e#3487#3488#0" expanded="true" />
               </folding>
@@ -36,21 +40,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="1071">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
+            <state relative-caret-position="451">
+              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1824#1825#0" expanded="true" />
                 <element signature="e#1869#1870#0" expanded="true" />
+                <element signature="e#2208#2216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,10 +77,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/SearchPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/SearchPage.java" />
       </list>
     </option>
   </component>
@@ -164,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548158512496" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548161635561" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="D:/Selenium/selenium-java-3.141.59" />
@@ -195,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTest">
+  <component name="RunManager" selected="TestNG.MainPageTest.checkTextInSearchedElements">
     <configuration name="SearchPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.SearchPage" />
       <module name="Testmotovilovcom" />
@@ -218,24 +223,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Prestashop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkClickUSDCurrencyDropDownButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -278,13 +265,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTest.checkTextInSearchedElements" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testmotovilovcom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="view" />
+      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
+      <option name="METHOD_NAME" value="checkTextInSearchedElements" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTest.checkTextInSearchedElements" />
         <item itemvalue="TestNG.MainPageTest" />
         <item itemvalue="TestNG.MainPageTest.checkSearchGoodsByCountOfElements" />
         <item itemvalue="Application.SearchPage" />
         <item itemvalue="TestNG.MainPageTest.checkSearchByCatalog" />
-        <item itemvalue="TestNG.MainPageTest.checkClickUSDCurrencyDropDownButton" />
       </list>
     </recent_temporary>
   </component>
@@ -303,35 +308,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 43m 04s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 38m 16s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 48m 45s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 39m 17s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest - 2019.01.22 at 13h 49m 47s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 39m 38s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 50m 28s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 40m 02s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 51m 13s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 43m 22s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 52m 46s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 47m 23s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 53m 51s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 49m 01s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 55m 25s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 49m 25s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 58m 12s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 50m 17s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSearchGoodsByCountOfElements - 2019.01.22 at 13h 58m 43s.xml">
-      <configuration name="MainPageTest.checkSearchGoodsByCountOfElements" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkTextInSearchedElements - 2019.01.22 at 14h 50m 59s.xml">
+      <configuration name="MainPageTest.checkTextInSearchedElements" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -432,20 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -453,26 +444,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPage.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="538">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
             <element signature="e#3455#3456#0" expanded="true" />
             <element signature="e#3487#3488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#1869#1870#0" expanded="true" />
+            <element signature="e#2208#2216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -534,6 +542,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

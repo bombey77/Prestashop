@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -41,7 +41,7 @@ public class SearchPage {
 
     public void searchByCatalog(String text) {
         searchField.clear();
-        searchField.sendKeys(text);
+        searchField.sendKeys(text.toLowerCase());
         serchButton.click();
     }
 
@@ -59,6 +59,23 @@ public class SearchPage {
         String[] countOfElementsText = countOfSearchedElements.getText().split(" ");
         int elements = Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
         return elements;
+    }
+
+    public boolean findTextInSearchedElements(String text) {
+        boolean contains = true;
+        searchByCatalog(text);
+        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
+        List<String> listOfTitle = new ArrayList<String>();
+
+        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
+            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
+        }
+
+        for (int i = 0; i < listOfTitle.size(); i++) {
+            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
+            if (!listOfTitle.get(i).contains(text)) contains = false;
+        }
+        return contains;
     }
 
 }
