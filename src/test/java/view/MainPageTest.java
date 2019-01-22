@@ -1,10 +1,12 @@
 package view;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -14,6 +16,7 @@ public class MainPageTest {
     private String mainPageTitle = "prestashop-automation";
     private WebDriver webDriver;
     private MainPage mainPage;
+    private SearchPage searchPage;
     private String searchText = "dress";
 
     @BeforeMethod
@@ -25,6 +28,7 @@ public class MainPageTest {
 
         webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         mainPage = new MainPage(webDriver);
+        searchPage = new SearchPage(webDriver);
     }
 
 
@@ -76,8 +80,14 @@ public class MainPageTest {
 
     @Test
     public void checkSearchByCatalog() {
-        mainPage.searchByCatalog(searchText);
-        Assert.assertTrue(mainPage.getFieldOfSearchedElements().isDisplayed());
+        searchPage.searchByCatalog(searchText);
+        Assert.assertTrue(searchPage.getFieldOfSearchedElements().isDisplayed());
+    }
+
+    @Test
+    public void checkSearchGoodsByCountOfElements() {
+        searchPage.searchByCatalog(searchText);
+        Assert.assertEquals(searchPage.getListOfSearchedElements().size(), searchPage.getCountOfSearchedElements());
     }
 
     @AfterMethod
