@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -38,6 +37,14 @@ public class SearchPage {
     @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[1]/p")
     private WebElement countOfSearchedElements;
 
+    @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[2]/div/div/a")
+    private WebElement sortingDropDownList;
+
+    @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[2]/div/div/div/a[5]")
+    private WebElement sortingDropDownListItemMaxToMin;
+
+    @FindBy(xpath = "//*[@id=\"js-product-list\"]/div[1]/*")
+    private List<WebElement> priceList;
 
     public void searchByCatalog(String text) {
         searchField.clear();
@@ -63,7 +70,6 @@ public class SearchPage {
 
     public boolean findTextInSearchedElements(String text) {
         boolean contains = true;
-//        searchByCatalog(text);
         List<WebElement> listOfSearchedElements = getListOfSearchedElements();
         List<String> listOfTitle = new ArrayList<String>();
 
@@ -87,6 +93,11 @@ public class SearchPage {
         return findTextInSearchedElements("$");
     }
 
+    public void clickSortingDropDownList() {
+        sortingDropDownList.click();
+    }
 
-
+    public void clickSortingDropDownListItemMaxToMin() {
+        sortingDropDownListItemMaxToMin.click();
+    }
 }

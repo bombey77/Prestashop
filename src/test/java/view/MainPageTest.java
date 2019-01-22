@@ -100,6 +100,13 @@ public class MainPageTest {
         Assert.assertTrue(searchPage.currencyOfItemInSearchList(mainPage, searchText));
     }
 
+    @Test
+    public void checkSortingByPrice() {
+        searchPage.searchByCatalog(searchText);
+        searchPage.clickSortingDropDownList();
+        searchPage.clickSortingDropDownListItemMaxToMin();
+    }
+
     @AfterMethod
     public void tearDown() {
         webDriver.quit();
