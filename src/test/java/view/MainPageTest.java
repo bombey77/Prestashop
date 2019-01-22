@@ -14,8 +14,9 @@ public class MainPageTest {
     private String mainPageTitle = "prestashop-automation";
     private WebDriver webDriver;
     private MainPage mainPage;
+    private String searchText = "dress";
 
-    @BeforeSuite
+    @BeforeMethod
     public void setUp(/*@Optional("chrome") String browser*/) {
         path = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", path + "/src/main/java/drivers/chromedriver.exe");
@@ -73,7 +74,13 @@ public class MainPageTest {
         Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
     }
 
-    @AfterSuite
+    @Test
+    public void checkSearchByCatalog() {
+        mainPage.searchByCatalog(searchText);
+        Assert.assertTrue(mainPage.getFieldOfSearchedElements().isDisplayed());
+    }
+
+    @AfterMethod
     public void tearDown() {
         webDriver.quit();
     }

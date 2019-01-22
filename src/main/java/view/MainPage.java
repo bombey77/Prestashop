@@ -1,15 +1,21 @@
 package view;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainPage {
 
     private WebDriver webDriver;
+    private WebDriverWait webDriverWait;
     private String mainPageTitle = "prestashop-automation";
     private String mainPage = "http://prestashop-automation.qatestlab.com.ua/ru/";
 
@@ -24,6 +30,15 @@ public class MainPage {
 
     @FindBy(xpath = "//*[@id=\"content\"]/section/div/*")
     private List<WebElement> listPopularGoods;
+
+    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/input[2]")
+    private WebElement searchField;
+
+    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/button/i")
+    private WebElement serchButton;
+
+    @FindBy(xpath = "(//*[@id=\"js-product-list\"]/div/*)")
+    private WebElement fieldOfSearchedElements;
 
     public MainPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -69,5 +84,17 @@ public class MainPage {
 
     public WebElement getCurrencySignButton() {
         return currencySignButton;
+    }
+
+    public void searchByCatalog(String text) {
+        searchField.clear();
+        searchField.sendKeys(text);
+        serchButton.click();
+    }
+
+    public WebElement getFieldOfSearchedElements() {
+        fieldOfSearchedElements = (new WebDriverWait(webDriver, 30))
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//*[@id=\"js-product-list\"]/div/*)")));
+        return fieldOfSearchedElements;
     }
 }

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/MainPageTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,23 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1534#1535#0" expanded="true" />
-                <element signature="e#1734#1735#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1894#1895#0" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2293#2294#0" expanded="true" />
-                <element signature="e#2334#2335#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="419">
+              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -47,12 +27,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+            <state relative-caret-position="351">
+              <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,12 +55,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/view/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/view/MainPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MainPage.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="346" />
     <option name="y" value="81" />
     <option name="width" value="1400" />
@@ -93,42 +73,79 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Prestashop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drivers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testmotovilovcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testmotovilovcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548108552835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548150021190" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="D:/Selenium/selenium-java-3.141.59" />
@@ -211,24 +228,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkForUAHCurrency (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Prestashop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
-      <option name="METHOD_NAME" value="checkForUAHCurrency" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainPageTest.checkForUAHCurrency" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testmotovilovcom" />
       <extension name="coverage">
@@ -247,13 +246,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTest.checkSearchByCatalog" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testmotovilovcom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="view" />
+      <option name="MAIN_CLASS_NAME" value="view.MainPageTest" />
+      <option name="METHOD_NAME" value="checkSearchByCatalog" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainPageTest" />
+        <item itemvalue="TestNG.MainPageTest.checkSearchByCatalog" />
         <item itemvalue="TestNG.MainPageTest.checkClickUSDCurrencyDropDownButton" />
         <item itemvalue="TestNG.MainPageTest.checkClickUSDCurrencyDropDownButton (1)" />
         <item itemvalue="TestNG.MainPageTest.checkForUAHCurrency" />
-        <item itemvalue="TestNG.MainPageTest.checkForUAHCurrency (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -272,65 +289,73 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest - 2019.01.21 at 23h 10m 32s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest - 2019.01.21 at 23h 16m 28s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest - 2019.01.21 at 23h 31m 40s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton - 2019.01.21 at 23h 41m 17s.xml">
-      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton_(1) - 2019.01.21 at 23h 42m 34s.xml">
-      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest_checkClickUSDCurrencyDropDownButton - 2019.01.21 at 23h 44m 21s.xml">
-      <configuration name="MainPageTest.checkClickUSDCurrencyDropDownButton" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest - 2019.01.21 at 23h 51m 33s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainPageTest - 2019.01.21 at 23h 54m 27s.xml">
-      <configuration name="MainPageTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="MainPageTest - 2019.01.21 at 23h 57m 12s.xml">
       <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="MainPageTest - 2019.01.22 at 00h 02m 25s.xml">
       <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MainPageTest - 2019.01.22 at 09h 55m 35s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 39m 56s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 40m 27s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 42m 50s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 43m 20s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 51m 00s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 10h 58m 10s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MainPageTest_checkSearchByCatalog - 2019.01.22 at 11h 21m 25s.xml">
+      <configuration name="MainPageTest.checkSearchByCatalog" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="9939000" />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -339,6 +364,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -401,34 +427,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2293#2294#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="419">
+          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/view/MainPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+        <state relative-caret-position="351">
+          <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
           </folding>
         </state>
       </provider>
