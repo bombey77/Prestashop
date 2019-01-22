@@ -24,6 +24,7 @@ public class MainPageTest {
         path = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
         webDriver = new ChromeDriver();
+        webDriver.manage().window().maximize();
         webDriver.get("http://prestashop-automation.qatestlab.com.ua/ru/");
 
         webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
