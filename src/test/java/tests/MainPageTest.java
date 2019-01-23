@@ -7,7 +7,7 @@ public class MainPageTest extends BaseTest {
 
     @Test
     public void checkOpenMainPage() {
-        Assert.assertEquals(mainPage.getMainPageTitle(), mainPageTitle);
+        Assert.assertEquals(mainPage.getMainPageTitle(), MAIN_PAGE_TITLE);
     }
 
     @Test
@@ -53,13 +53,13 @@ public class MainPageTest extends BaseTest {
 
     @Test
     public void checkSearchByCatalog() {
-        searchPage.searchByCatalog(searchText);
+        searchPage.searchByCatalog(SEARCH_TEXT);
         Assert.assertTrue(searchPage.getFieldOfSearchedElements().isDisplayed());
     }
 
     @Test
     public void checkSearchGoodsByCountOfElements() {
-        searchPage.searchByCatalog(searchText);
+        searchPage.searchByCatalog(SEARCH_TEXT);
         Assert.assertEquals(searchPage.getListOfSearchedElements().size(), searchPage.getCountOfSearchedElements());
     }
 
@@ -67,22 +67,47 @@ public class MainPageTest extends BaseTest {
     @Ignore
     @Test
     public void checkTextInSearchedElements() {
-        searchPage.searchByCatalog(searchText);
-        Assert.assertTrue(searchPage.findTextInSearchedElements(searchText));
+        searchPage.searchByCatalog(SEARCH_TEXT);
+        Assert.assertTrue(searchPage.findTextInSearchedElements(SEARCH_TEXT));
     }
 
     @Test
     public void checkCurrencySignInSearchedElements() {
         mainPage.clickCurrencyDropDownButton();
         mainPage.clickUSDCurrencyDropDownButton();
-        searchPage.searchByCatalog(searchText);
+        searchPage.searchByCatalog(SEARCH_TEXT);
         Assert.assertTrue(searchPage.currencyOfItemInSearchList("$"));
     }
 
     @Test
-    public void checkSortingByPrice() {
-        searchPage.searchByCatalog(searchText);
+    public void sortingByPriceMaxToMin() {
+        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickUSDCurrencyDropDownButton();
+        searchPage.searchByCatalog(SEARCH_TEXT);
         searchPage.clickSortingDropDownList();
         searchPage.clickSortingDropDownListItemMaxToMin();
+    }
+
+    @Test
+    public void checkSortingByPrice() {
+        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickUSDCurrencyDropDownButton();
+        searchPage.searchByCatalog(SEARCH_TEXT);
+        searchPage.clickSortingDropDownList();
+        searchPage = searchPage.clickSortingDropDownListItemMaxToMin();
+
+        //some logic
+        searchPage.sortingGoodsByPrice();
+    }
+
+    @Test
+    public void checkDiscountGoodsRegularAndDiscountPriceExist() {
+        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickUSDCurrencyDropDownButton();
+        searchPage.searchByCatalog(SEARCH_TEXT);
+        searchPage.clickSortingDropDownList();
+        searchPage.clickSortingDropDownListItemMaxToMin();
+        //some logic
+        searchPage.checkDiscountAndRegularPrice();
     }
 }

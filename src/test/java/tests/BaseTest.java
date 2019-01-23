@@ -10,17 +10,16 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import view.MainPage;
 import view.SearchPage;
-
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    protected String path;
-    protected String mainPageTitle = "prestashop-automation";
+    private String path;
+    protected static String MAIN_PAGE_TITLE = "prestashop-automation";
     protected WebDriver webDriver;
     protected MainPage mainPage;
     protected SearchPage searchPage;
-    protected String searchText = "dress";
+    protected static String SEARCH_TEXT = "dress";
 
     @Parameters("browser")
     @BeforeMethod
@@ -39,14 +38,13 @@ public class BaseTest {
 
         webDriver.manage().window().maximize();
         webDriver.get("http://prestashop-automation.qatestlab.com.ua/ru/");
-
         webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         mainPage = new MainPage(webDriver);
         searchPage = new SearchPage(webDriver);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        webDriver.quit();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        webDriver.quit();
+//    }
 }

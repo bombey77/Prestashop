@@ -8,9 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class SearchPage extends BaseTest {
 
@@ -37,6 +35,9 @@ public class SearchPage extends BaseTest {
 
     @FindBy(xpath = "//*[@id='js-product-list']/div[1]/*")
     private List<WebElement> priceList;
+
+    @FindBy(xpath = "//*[@id=\"js-product-list\"]/div[1]/article[4]/div/div[1]/div/*")
+    private List<WebElement> discount;
 
     public SearchPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -81,6 +82,54 @@ public class SearchPage extends BaseTest {
         return contains;
     }
 
+    public void sortingGoodsByPrice() {
+        for (int i = 0; i < priceList.size(); i++) {
+            System.out.println(priceList.get(i).getText());
+            System.out.println("=======================");
+        }
+//        List<Double> price = new ArrayList<>();
+//
+//        List<String> elements = new ArrayList<>();
+//        for (int i = 0; i < priceList.size(); i++) {
+//            elements.add(priceList.get(i).getText());
+//            String[] strings = elements.get(i).split("\n");
+//            String[] res = strings[1].split(" ");
+//            String s = res[0].replace(",", ".");
+//            price.add(Double.valueOf(s));
+//        }
+//
+//        Collections.sort(price);
+//
+//        for (int i = 0; i < price.size(); i++) {
+//            System.out.println("res " + i + " = " + price.get(i));
+//        }
+    }
+
+    public void checkDiscountAndRegularPrice() {
+        for (int i = 0; i < discount.size(); i++) {
+            System.out.println(discount.get(i).getText());
+            System.out.println("=======================");
+        }
+//        List<Double> price = new ArrayList<>();
+//
+//        List<String> elements = new ArrayList<>();
+//        for (int i = 0; i < priceList.size(); i++) {
+//            elements.add(priceList.get(i).getText());
+//            String[] strings = elements.get(i).split("\n");
+//            String[] res = strings[1].split(" ");
+//            String s = res[0].replace(",", ".");
+//            price.add(Double.valueOf(s));
+//        }
+//
+//        Collections.sort(price);
+//
+//        for (int i = 0; i < price.size(); i++) {
+//            System.out.println("res " + i + " = " + price.get(i));
+//        }
+    }
+
+
+
     public boolean currencyOfItemInSearchList(String text) {
         return findTextInSearchedElements(text);
     }
@@ -89,7 +138,8 @@ public class SearchPage extends BaseTest {
         sortingDropDownList.click();
     }
 
-    public void clickSortingDropDownListItemMaxToMin() {
+    public SearchPage clickSortingDropDownListItemMaxToMin() {
         sortingDropDownListItemMaxToMin.click();
+        return new SearchPage(webDriver);
     }
 }

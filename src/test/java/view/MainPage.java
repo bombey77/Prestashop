@@ -9,8 +9,7 @@ import java.util.List;
 
 public class MainPage extends BaseTest {
 
-    private String mainPageTitle = "prestashop-automation";
-    private String manePageAddress = "http://prestashop-automation.qatestlab.com.ua/ru/";
+    private static String MAIN_PAGE_URL = "http://prestashop-automation.qatestlab.com.ua/ru/";
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]")
     private WebElement currencySignButton;
@@ -39,12 +38,11 @@ public class MainPage extends BaseTest {
     }
 
     public String getMainPageTitle() {
-        mainPageTitle = webDriver.getTitle();
-        return mainPageTitle;
+        return MAIN_PAGE_TITLE;
     }
 
     public void openMainPage() {
-        webDriver.get(manePageAddress);
+        webDriver.get(MAIN_PAGE_URL);
     }
 
     public void clickCurrencyDropDownButton() {
