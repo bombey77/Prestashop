@@ -1,5 +1,6 @@
 package view;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import tests.BaseTest;
 import java.util.*;
 
@@ -157,6 +159,40 @@ public class SearchPage extends BaseTest {
         return priceExisting;
     }
 
+    public boolean checkDiscountValue() {
+        double regularPrice = 0;
+        double price = 0;
+        double resultWithDiscount = 0;
+
+        boolean percentageEquality = true;
+
+        for (Double d : discountProducts.keySet()) {
+            System.out.println(d);
+            regularPrice = discountProducts.get(d).getRegularPrice();
+            price = discountProducts.get(d).getPrice();
+
+            resultWithDiscount = regularPrice * (1 - d / 100);
+            if (resultWithDiscount != price) {
+                System.out.println("Discount is correct = " + (resultWithDiscount == price));
+                percentageEquality = false;
+            }
+        }
+        return percentageEquality;
+    }
+
+    public boolean currencyOfItemInSearchList(String text) {
+        return findTextInSearchedElements(text);
+    }
+
+    public void clickSortingDropDownList() {
+        sortingDropDownList.click();
+    }
+
+    public SearchPage clickSortingDropDownListItemMaxToMin() {
+        sortingDropDownListItemMaxToMin.click();
+        return new SearchPage(webDriver);
+    }
+
     private static class Price {
 
         private double regularPrice;
@@ -176,18 +212,15 @@ public class SearchPage extends BaseTest {
         }
     }
 
+    public void test() {
+        for (int i = 0; i < webElements.size(); i++) {
+            try{
+                WebElement webElement = webElements.get(i).findElement(By.className("discount-percentage"));
 
+            } catch (Exception e) {
 
-    public boolean currencyOfItemInSearchList(String text) {
-        return findTextInSearchedElements(text);
-    }
+            }
+        }
 
-    public void clickSortingDropDownList() {
-        sortingDropDownList.click();
-    }
-
-    public SearchPage clickSortingDropDownListItemMaxToMin() {
-        sortingDropDownListItemMaxToMin.click();
-        return new SearchPage(webDriver);
     }
 }

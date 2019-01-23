@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9342c50-d42f-453e-bb93-69249d6843fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/view/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/SearchPage.java" afterDir="false" />
     </list>
@@ -30,20 +29,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/view/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+            <state relative-caret-position="400">
+              <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5468#5469#0" expanded="true" />
-                <element signature="e#5511#5512#0" expanded="true" />
-                <element signature="e#5547#5548#0" expanded="true" />
-                <element signature="e#5583#5584#0" expanded="true" />
-                <element signature="e#6624#6625#0" expanded="true" />
-                <element signature="e#6713#6714#0" expanded="true" />
+                <element signature="e#6985#6986#0" expanded="true" />
+                <element signature="e#7074#7075#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/Alert.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Reporter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -51,25 +73,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/MainPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+            <state relative-caret-position="1441">
+              <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <element signature="e#1828#1829#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/main/java/view/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/view/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/MainPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/view/SearchPage.java" />
       </list>
@@ -174,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548254459947" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548262709378" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="D:/Selenium/selenium-java-3.141.59" />
@@ -225,7 +232,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkCurrencySignInSearchedElements" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkDiscountValueTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testmotovilovcom" />
       <extension name="coverage">
         <pattern>
@@ -235,7 +242,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.MainPageTest" />
-      <option name="METHOD_NAME" value="checkCurrencySignInSearchedElements" />
+      <option name="METHOD_NAME" value="checkDiscountValueTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -243,7 +250,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkProductRegularAndDiscountPriceAreExists" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkProductRegularAndDiscountPriceAreExistsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testmotovilovcom" />
       <extension name="coverage">
         <pattern>
@@ -253,7 +260,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.MainPageTest" />
-      <option name="METHOD_NAME" value="checkProductRegularAndDiscountPriceAreExists" />
+      <option name="METHOD_NAME" value="checkProductRegularAndDiscountPriceAreExistsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -300,10 +307,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainPageTest" />
-        <item itemvalue="TestNG.MainPageTest.checkProductRegularAndDiscountPriceAreExists" />
+        <item itemvalue="TestNG.MainPageTest.checkDiscountValueTest" />
+        <item itemvalue="TestNG.MainPageTest.checkProductRegularAndDiscountPriceAreExistsTest" />
         <item itemvalue="TestNG.MainPageTest.checkSortingByPrice" />
         <item itemvalue="TestNG.MainPageTest.sortingByPriceMaxToMin" />
-        <item itemvalue="TestNG.MainPageTest.checkCurrencySignInSearchedElements" />
       </list>
     </recent_temporary>
   </component>
@@ -322,35 +329,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_checkSortingByPrice - 2019.01.23 at 16h 26m 04s.xml">
-      <configuration name="MainPageTest.checkSortingByPrice" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValue - 2019.01.23 at 18h 23m 59s.xml">
+      <configuration name="MainPageTest.checkDiscountValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkSortingByPrice - 2019.01.23 at 16h 26m 26s.xml">
-      <configuration name="MainPageTest.checkSortingByPrice" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValue - 2019.01.23 at 18h 24m 25s.xml">
+      <configuration name="MainPageTest.checkDiscountValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 27m 07s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValue - 2019.01.23 at 18h 25m 09s.xml">
+      <configuration name="MainPageTest.checkDiscountValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 30m 01s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValue - 2019.01.23 at 18h 25m 41s.xml">
+      <configuration name="MainPageTest.checkDiscountValue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 32m 03s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValueTest - 2019.01.23 at 18h 27m 12s.xml">
+      <configuration name="MainPageTest.checkDiscountValueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 34m 01s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValueTest - 2019.01.23 at 18h 27m 42s.xml">
+      <configuration name="MainPageTest.checkDiscountValueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 35m 27s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValueTest - 2019.01.23 at 18h 30m 05s.xml">
+      <configuration name="MainPageTest.checkDiscountValueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 36m 29s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValueTest - 2019.01.23 at 18h 31m 09s.xml">
+      <configuration name="MainPageTest.checkDiscountValueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 37m 06s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest_checkDiscountValueTest - 2019.01.23 at 18h 32m 52s.xml">
+      <configuration name="MainPageTest.checkDiscountValueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_checkDiscountGoodsRegularAndDiscountPriceExist - 2019.01.23 at 16h 37m 45s.xml">
-      <configuration name="MainPageTest.checkDiscountGoodsRegularAndDiscountPriceExist" configurationId="TestNG" />
+    <history-entry file="MainPageTest - 2019.01.23 at 18h 37m 05s.xml">
+      <configuration name="MainPageTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -369,7 +376,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,7 +385,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3856988" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3856988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="453" selection-start-line="453" selection-end-line="453" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -479,10 +479,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="502">
+          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="343" selection-start-line="343" selection-end-line="343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="360" selection-start-line="360" selection-end-line="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestMethodWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="803" selection-start-line="803" selection-end-line="803" />
         </state>
       </provider>
     </entry>
@@ -500,40 +532,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/MainPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+        <state relative-caret-position="1441">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Reporter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/Alert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/view/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+        <state relative-caret-position="400">
+          <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5468#5469#0" expanded="true" />
-            <element signature="e#5511#5512#0" expanded="true" />
-            <element signature="e#5547#5548#0" expanded="true" />
-            <element signature="e#5583#5584#0" expanded="true" />
-            <element signature="e#6624#6625#0" expanded="true" />
-            <element signature="e#6713#6714#0" expanded="true" />
+            <element signature="e#6985#6986#0" expanded="true" />
+            <element signature="e#7074#7075#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>

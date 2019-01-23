@@ -1,9 +1,11 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
+import org.testng.annotations.Ignore;
 
 public class MainPageTest extends BaseTest {
+
 
     @Test
     public void checkOpenMainPage() {
@@ -100,12 +102,24 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    public void checkProductRegularAndDiscountPriceAreExists() {
+    public void checkProductRegularAndDiscountPriceAreExistsTest() {
         mainPage.clickCurrencyDropDownButton();
         mainPage.clickUSDCurrencyDropDownButton();
         searchPage.searchByCatalog(SEARCH_TEXT);
         searchPage.clickSortingDropDownList();
         searchPage.clickSortingDropDownListItemMaxToMin();
         Assert.assertTrue(searchPage.checkDiscountAndRegularPrice());
+    }
+
+    @Ignore
+    @Test
+    public void checkDiscountValueTest() {
+        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickUSDCurrencyDropDownButton();
+        searchPage.searchByCatalog(SEARCH_TEXT);
+        searchPage.clickSortingDropDownList();
+        searchPage.clickSortingDropDownListItemMaxToMin();
+        searchPage.checkDiscountAndRegularPrice();
+        Assert.assertTrue(searchPage.checkDiscountValue());
     }
 }
