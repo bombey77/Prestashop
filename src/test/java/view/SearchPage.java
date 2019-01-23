@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public class SearchPage extends BaseTest {
 
@@ -42,6 +41,8 @@ public class SearchPage extends BaseTest {
 
     @FindBy(xpath = "//*[@class=\"product-miniature js-product-miniature\"]")
     private List<WebElement> webElements;
+
+    private Map<Double, Price> discountProducts;
 
     public SearchPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -109,11 +110,11 @@ public class SearchPage extends BaseTest {
 //        }
     }
 
-    public void checkDiscountAndRegularPrice() {
-        for (int i = 0; i < discount.size(); i++) {
-            System.out.println(discount.get(i).getText());
-            System.out.println("=======================");
-        }
+//    public void checkDiscountAndRegularPrice() {
+//        for (int i = 0; i < discount.size(); i++) {
+//            System.out.println(discount.get(i).getText());
+//            System.out.println("=======================");
+//        }
 //        List<Double> price = new ArrayList<>();
 //
 //        List<String> elements = new ArrayList<>();
@@ -130,11 +131,49 @@ public class SearchPage extends BaseTest {
 //        for (int i = 0; i < price.size(); i++) {
 //            System.out.println("res " + i + " = " + price.get(i));
 //        }
+//    }
+
+    public boolean checkDiscountAndRegularPrice() {
+        discountProducts = new HashMap<>();
+        double discount;
+        boolean priceExisting = false;
+
+        for (int i = 0; i < priceList.size(); i++) {
+            String[] mas = priceList.get(i).getText().split("\n");
+            if (mas[2].contains("%")) {
+                String[] s = mas[2].split("\n");
+                discount = Double.valueOf(s[0].substring(1, s[0].length()-1));
+                String[] regularPrice = mas[1].split(" ");
+                String[] price = mas[3].split(" ");
+                discountProducts.put(discount, new Price(Double.valueOf(regularPrice[0]
+                        .replace(",", ".")),
+                        Double.valueOf(price[0].replace(",", "."))));
+                priceExisting = (Double.valueOf(regularPrice[0]
+                        .replace(",", ".")) > 0 && Double.valueOf(price[0].replace(",", ".")) > 0);
+            }
+        }
+        discountProducts.forEach((k,v) -> System.out.println("Discount = " + k + ", regularPrice = "
+                + v.getRegularPrice() + ", price = " + v.getPrice()));
+        return priceExisting;
     }
 
-    public void test() {
-        System.out.println(webElements.get(2).findElement(By.className("discount-percentage")));
-//        WebElement element = new WebDriverWait(webDriver, 10).until(ExpectedConditions.presenceOfElementLocated((By.className("discount-percentage"))));
+    private static class Price {
+
+        private double regularPrice;
+        private double price;
+
+        public Price(double regularPrice, double price) {
+            this.regularPrice = regularPrice;
+            this.price = price;
+        }
+
+        public double getRegularPrice() {
+            return regularPrice;
+        }
+
+        public double getPrice() {
+            return price;
+        }
     }
 
 

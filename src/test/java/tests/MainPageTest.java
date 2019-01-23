@@ -96,16 +96,16 @@ public class MainPageTest extends BaseTest {
         searchPage.clickSortingDropDownList();
         searchPage = searchPage.clickSortingDropDownListItemMaxToMin();
         searchPage.sortingGoodsByPrice();
+        // no result
     }
 
     @Test
-    public void checkDiscountGoodsRegularAndDiscountPriceExist() {
+    public void checkProductRegularAndDiscountPriceAreExists() {
         mainPage.clickCurrencyDropDownButton();
         mainPage.clickUSDCurrencyDropDownButton();
         searchPage.searchByCatalog(SEARCH_TEXT);
         searchPage.clickSortingDropDownList();
         searchPage.clickSortingDropDownListItemMaxToMin();
-        //some logic
-        searchPage.test();
+        Assert.assertTrue(searchPage.checkDiscountAndRegularPrice());
     }
 }
