@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class SearchPage extends BaseTest {
 
@@ -38,6 +39,9 @@ public class SearchPage extends BaseTest {
 
     @FindBy(xpath = "//*[@id=\"js-product-list\"]/div[1]/article[4]/div/div[1]/div/*")
     private List<WebElement> discount;
+
+    @FindBy(xpath = "//*[@class=\"product-miniature js-product-miniature\"]")
+    private List<WebElement> webElements;
 
     public SearchPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -126,6 +130,11 @@ public class SearchPage extends BaseTest {
 //        for (int i = 0; i < price.size(); i++) {
 //            System.out.println("res " + i + " = " + price.get(i));
 //        }
+    }
+
+    public void test() {
+        System.out.println(webElements.get(2).findElement(By.className("discount-percentage")));
+//        WebElement element = new WebDriverWait(webDriver, 10).until(ExpectedConditions.presenceOfElementLocated((By.className("discount-percentage"))));
     }
 
 

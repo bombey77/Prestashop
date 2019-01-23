@@ -95,8 +95,6 @@ public class MainPageTest extends BaseTest {
         searchPage.searchByCatalog(SEARCH_TEXT);
         searchPage.clickSortingDropDownList();
         searchPage = searchPage.clickSortingDropDownListItemMaxToMin();
-
-        //some logic
         searchPage.sortingGoodsByPrice();
     }
 
@@ -108,6 +106,6 @@ public class MainPageTest extends BaseTest {
         searchPage.clickSortingDropDownList();
         searchPage.clickSortingDropDownListItemMaxToMin();
         //some logic
-        searchPage.checkDiscountAndRegularPrice();
+        searchPage.test();
     }
 }
