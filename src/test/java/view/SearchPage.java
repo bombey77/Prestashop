@@ -7,42 +7,41 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import tests.BaseTest;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchPage {
+public class SearchPage extends BaseTest {
 
-    private WebDriver webDriver;
+    @FindBy(xpath = "//*[@id='search_widget']/form/input[2]")
+    private WebElement searchField;
+
+    @FindBy(xpath = "//*[@id='search_widget']/form/button/i")
+    private WebElement serchButton;
+
+    @FindBy(xpath = "(//*[@id='js-product-list']/div/*)")
+    private WebElement fieldOfSearchedElements;
+
+    @FindBy(xpath = "//*[@id='js-product-list']/div[1]/*")
+    private List<WebElement> listOfSearchedElements;
+
+    @FindBy(xpath = "//*[@id='js-product-list-top']/div[1]/p")
+    private WebElement countOfSearchedElements;
+
+    @FindBy(xpath = "//*[@id='js-product-list-top']/div[2]/div/div/a")
+    private WebElement sortingDropDownList;
+
+    @FindBy(xpath = "//*[@id='js-product-list-top']/div[2]/div/div/div/a[5]")
+    private WebElement sortingDropDownListItemMaxToMin;
+
+    @FindBy(xpath = "//*[@id='js-product-list']/div[1]/*")
+    private List<WebElement> priceList;
 
     public SearchPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
-
-
-    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/input[2]")
-    private WebElement searchField;
-
-    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/button/i")
-    private WebElement serchButton;
-
-    @FindBy(xpath = "(//*[@id=\"js-product-list\"]/div/*)")
-    private WebElement fieldOfSearchedElements;
-
-    @FindBy(xpath = "//*[@id=\"js-product-list\"]/div[1]/*")
-    private List<WebElement> listOfSearchedElements;
-
-    @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[1]/p")
-    private WebElement countOfSearchedElements;
-
-    @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[2]/div/div/a")
-    private WebElement sortingDropDownList;
-
-    @FindBy(xpath = "//*[@id=\"js-product-list-top\"]/div[2]/div/div/div/a[5]")
-    private WebElement sortingDropDownListItemMaxToMin;
-
-    @FindBy(xpath = "//*[@id=\"js-product-list\"]/div[1]/*")
-    private List<WebElement> priceList;
 
     public void searchByCatalog(String text) {
         searchField.clear();
@@ -82,13 +81,8 @@ public class SearchPage {
         return contains;
     }
 
-    public boolean currencyOfItemInSearchList(MainPage mainPage, String text) {
-        if (!mainPage.getCurrencySign().equals("$")) {
-            mainPage.clickCurrencyDropDownButton();
-            mainPage.clickUSDCurrencyDropDownButton();
-        }
-        searchByCatalog(text);
-        return findTextInSearchedElements("$");
+    public boolean currencyOfItemInSearchList(String text) {
+        return findTextInSearchedElements(text);
     }
 
     public void clickSortingDropDownList() {

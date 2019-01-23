@@ -1,37 +1,9 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import view.MainPage;
-import view.SearchPage;
 
-import java.util.concurrent.TimeUnit;
-
-
-public class MainPageTest {
-
-    private String path;
-    private String mainPageTitle = "prestashop-automation";
-    private WebDriver webDriver;
-    private MainPage mainPage;
-    private SearchPage searchPage;
-    private String searchText = "dress";
-
-    @BeforeMethod
-    public void setUp(/*@Optional("chrome") String browser*/) {
-        path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-        webDriver.get("http://prestashop-automation.qatestlab.com.ua/ru/");
-
-        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        mainPage = new MainPage(webDriver);
-        searchPage = new SearchPage(webDriver);
-    }
-
+public class MainPageTest extends BaseTest {
 
     @Test
     public void checkOpenMainPage() {
@@ -101,7 +73,10 @@ public class MainPageTest {
 
     @Test
     public void checkCurrencySignInSearchedElements() {
-        Assert.assertTrue(searchPage.currencyOfItemInSearchList(mainPage, searchText));
+        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickUSDCurrencyDropDownButton();
+        searchPage.searchByCatalog(searchText);
+        Assert.assertTrue(searchPage.currencyOfItemInSearchList("$"));
     }
 
     @Test
@@ -109,10 +84,5 @@ public class MainPageTest {
         searchPage.searchByCatalog(searchText);
         searchPage.clickSortingDropDownList();
         searchPage.clickSortingDropDownListItemMaxToMin();
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        webDriver.quit();
     }
 }

@@ -4,35 +4,33 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import tests.BaseTest;
 import java.util.List;
 
-public class MainPage {
+public class MainPage extends BaseTest {
 
-    private WebDriver webDriver;
-    private WebDriverWait webDriverWait;
     private String mainPageTitle = "prestashop-automation";
-    private String mainPage = "http://prestashop-automation.qatestlab.com.ua/ru/";
+    private String manePageAddress = "http://prestashop-automation.qatestlab.com.ua/ru/";
 
     @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]")
     private WebElement currencySignButton;
 
-    @FindBy(xpath = "//*[@id=\"_desktop_currency_selector\"]/div/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")
     private WebElement eurElementCurrencySignButton;
 
-    @FindBy(xpath = "//*[@id=\"_desktop_currency_selector\"]/div/ul/li[3]/a")
+    @FindBy(xpath = "//*[@id='_desktop_currency_selector']/div/ul/li[3]/a")
     private WebElement usdElementCurrencySignButton;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/section/div/*")
+    @FindBy(xpath = "//*[@id='content']/section/div/*")
     private List<WebElement> listPopularGoods;
 
-    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/input[2]")
+    @FindBy(xpath = "//*[@id='search_widget']/form/input[2]")
     private WebElement searchField;
 
-    @FindBy(xpath = "//*[@id=\"search_widget\"]/form/button/i")
+    @FindBy(xpath = "//*[@id='search_widget']/form/button/i")
     private WebElement serchButton;
 
-    @FindBy(xpath = "(//*[@id=\"js-product-list\"]/div/*)")
+    @FindBy(xpath = "(//*[@id='js-product-list']/div/*)")
     private WebElement fieldOfSearchedElements;
 
     public MainPage(WebDriver webDriver) {
@@ -46,7 +44,7 @@ public class MainPage {
     }
 
     public void openMainPage() {
-        webDriver.get(mainPage);
+        webDriver.get(manePageAddress);
     }
 
     public void clickCurrencyDropDownButton() {
@@ -79,5 +77,4 @@ public class MainPage {
     public WebElement getCurrencySignButton() {
         return currencySignButton;
     }
-
 }
