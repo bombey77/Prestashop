@@ -43,8 +43,8 @@ public class BaseTest {
         searchPage = new SearchPage(webDriver);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        webDriver.quit();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        webDriver.quit();
+//    }
 }

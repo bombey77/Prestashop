@@ -21,16 +21,13 @@ public class MainPage extends BaseTest {
     private WebElement usdElementCurrencySignButton;
 
     @FindBy(xpath = "//*[@id='content']/section/div/*")
-    private List<WebElement> listPopularGoods;
+    private List<WebElement> listOfPopularGoods;
 
     @FindBy(xpath = "//*[@id='search_widget']/form/input[2]")
     private WebElement searchField;
 
     @FindBy(xpath = "//*[@id='search_widget']/form/button/i")
-    private WebElement serchButton;
-
-    @FindBy(xpath = "(//*[@id='js-product-list']/div/*)")
-    private WebElement fieldOfSearchedElements;
+    private WebElement searchButton;
 
     public MainPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -39,10 +36,6 @@ public class MainPage extends BaseTest {
 
     public String getMainPageTitle() {
         return MAIN_PAGE_TITLE;
-    }
-
-    public void openMainPage() {
-        webDriver.get(MAIN_PAGE_URL);
     }
 
     public void clickCurrencyDropDownButton() {
@@ -58,18 +51,15 @@ public class MainPage extends BaseTest {
     }
 
     public String getCurrencySign() {
+        int one = 1;
         String textCurrencySignButton = currencySignButton.getText();
-        char[] array = textCurrencySignButton.toCharArray();
-        String currencySign = String.valueOf(array[array.length-1]);
+        char[] arrayCurrencySignButton = textCurrencySignButton.toCharArray();
+        String currencySign = String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
         return currencySign;
     }
 
     public List<WebElement> getListOfPopularGoods() {
-        return listPopularGoods;
-    }
-
-    public int getListSizeOfPopularGoods() {
-        return listPopularGoods.size();
+        return listOfPopularGoods;
     }
 
     public WebElement getCurrencySignButton() {
