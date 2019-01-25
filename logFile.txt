@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-25T17:03:54</date>
+  <millis>1548428634058</millis>
+  <sequence>1</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:03:54</date>
+  <millis>1548428634272</millis>
+  <sequence>2</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:03:54</date>
+  <millis>1548428634272</millis>
+  <sequence>3</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:03:54</date>
+  <millis>1548428634375</millis>
+  <sequence>4</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:03:56</date>
+  <millis>1548428636450</millis>
+  <sequence>5</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:03:57</date>
+  <millis>1548428637118</millis>
+  <sequence>6</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:02</date>
+  <millis>1548428642618</millis>
+  <sequence>8</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:02</date>
+  <millis>1548428642626</millis>
+  <sequence>9</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:02</date>
+  <millis>1548428642626</millis>
+  <sequence>10</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:02</date>
+  <millis>1548428642713</millis>
+  <sequence>11</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'EUR Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:05</date>
+  <millis>1548428645896</millis>
+  <sequence>12</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:06</date>
+  <millis>1548428646490</millis>
+  <sequence>13</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:11</date>
+  <millis>1548428651410</millis>
+  <sequence>15</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:11</date>
+  <millis>1548428651419</millis>
+  <sequence>16</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:11</date>
+  <millis>1548428651562</millis>
+  <sequence>17</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 0 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:11</date>
+  <millis>1548428651728</millis>
+  <sequence>18</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 1 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:11</date>
+  <millis>1548428651883</millis>
+  <sequence>19</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 2 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:12</date>
+  <millis>1548428652032</millis>
+  <sequence>20</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 3 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:12</date>
+  <millis>1548428652178</millis>
+  <sequence>21</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 4 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:12</date>
+  <millis>1548428652325</millis>
+  <sequence>22</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 5 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:12</date>
+  <millis>1548428652457</millis>
+  <sequence>23</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 6 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:12</date>
+  <millis>1548428652529</millis>
+  <sequence>24</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:13</date>
+  <millis>1548428653182</millis>
+  <sequence>25</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:18</date>
+  <millis>1548428658469</millis>
+  <sequence>27</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:18</date>
+  <millis>1548428658480</millis>
+  <sequence>28</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>checkForUSDCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:18</date>
+  <millis>1548428658480</millis>
+  <sequence>29</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:18</date>
+  <millis>1548428658573</millis>
+  <sequence>30</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:21</date>
+  <millis>1548428661505</millis>
+  <sequence>31</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>checkForUSDCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:22</date>
+  <millis>1548428662178</millis>
+  <sequence>32</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:27</date>
+  <millis>1548428667448</millis>
+  <sequence>34</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:27</date>
+  <millis>1548428667456</millis>
+  <sequence>35</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>checkCurrencySignInSearchedElements TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:27</date>
+  <millis>1548428667456</millis>
+  <sequence>36</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:27</date>
+  <millis>1548428667530</millis>
+  <sequence>37</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:29</date>
+  <millis>1548428669541</millis>
+  <sequence>38</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:29</date>
+  <millis>1548428669541</millis>
+  <sequence>39</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:31</date>
+  <millis>1548428671675</millis>
+  <sequence>40</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>checkCurrencySignInSearchedElements TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:32</date>
+  <millis>1548428672353</millis>
+  <sequence>41</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:37</date>
+  <millis>1548428677611</millis>
+  <sequence>43</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:37</date>
+  <millis>1548428677633</millis>
+  <sequence>44</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:37</date>
+  <millis>1548428677633</millis>
+  <sequence>45</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:37</date>
+  <millis>1548428677714</millis>
+  <sequence>46</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:39</date>
+  <millis>1548428679726</millis>
+  <sequence>47</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:39</date>
+  <millis>1548428679727</millis>
+  <sequence>48</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:41</date>
+  <millis>1548428681561</millis>
+  <sequence>49</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:41</date>
+  <millis>1548428681625</millis>
+  <sequence>50</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:42</date>
+  <millis>1548428682062</millis>
+  <sequence>51</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:42</date>
+  <millis>1548428682725</millis>
+  <sequence>52</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:48</date>
+  <millis>1548428688016</millis>
+  <sequence>54</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:48</date>
+  <millis>1548428688031</millis>
+  <sequence>55</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>checkSearchGoodsByCountOfElements TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:48</date>
+  <millis>1548428688031</millis>
+  <sequence>56</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:48</date>
+  <millis>1548428688032</millis>
+  <sequence>57</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:49</date>
+  <millis>1548428689807</millis>
+  <sequence>58</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>checkSearchGoodsByCountOfElements TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:50</date>
+  <millis>1548428690465</millis>
+  <sequence>59</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:55</date>
+  <millis>1548428695758</millis>
+  <sequence>61</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:55</date>
+  <millis>1548428695772</millis>
+  <sequence>62</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>checkSortingByPrice TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:55</date>
+  <millis>1548428695772</millis>
+  <sequence>63</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:55</date>
+  <millis>1548428695877</millis>
+  <sequence>64</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:57</date>
+  <millis>1548428697879</millis>
+  <sequence>65</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:57</date>
+  <millis>1548428697880</millis>
+  <sequence>66</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:59</date>
+  <millis>1548428699497</millis>
+  <sequence>67</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List'</message>
+</record>
+<record>
+  <date>2019-01-25T17:04:59</date>
+  <millis>1548428699571</millis>
+  <sequence>68</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:02</date>
+  <millis>1548428702980</millis>
+  <sequence>69</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>checkSortingByPrice TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:03</date>
+  <millis>1548428703635</millis>
+  <sequence>70</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:08</date>
+  <millis>1548428708991</millis>
+  <sequence>72</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:09</date>
+  <millis>1548428709002</millis>
+  <sequence>73</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:09</date>
+  <millis>1548428709003</millis>
+  <sequence>74</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:09</date>
+  <millis>1548428709275</millis>
+  <sequence>75</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:11</date>
+  <millis>1548428711271</millis>
+  <sequence>76</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:12</date>
+  <millis>1548428712547</millis>
+  <sequence>77</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:17</date>
+  <millis>1548428717712</millis>
+  <sequence>79</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:17</date>
+  <millis>1548428717725</millis>
+  <sequence>80</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:17</date>
+  <millis>1548428717725</millis>
+  <sequence>81</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:18</date>
+  <millis>1548428718004</millis>
+  <sequence>82</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'EUR Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:20</date>
+  <millis>1548428720320</millis>
+  <sequence>83</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:21</date>
+  <millis>1548428721557</millis>
+  <sequence>84</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:26</date>
+  <millis>1548428726691</millis>
+  <sequence>86</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:26</date>
+  <millis>1548428726710</millis>
+  <sequence>87</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:26</date>
+  <millis>1548428726883</millis>
+  <sequence>88</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 0 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727081</millis>
+  <sequence>89</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 1 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727239</millis>
+  <sequence>90</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 2 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727440</millis>
+  <sequence>91</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 3 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727604</millis>
+  <sequence>92</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 4 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727754</millis>
+  <sequence>93</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 5 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727903</millis>
+  <sequence>94</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>Element 6 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:27</date>
+  <millis>1548428727978</millis>
+  <sequence>95</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrency</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:29</date>
+  <millis>1548428729363</millis>
+  <sequence>96</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:34</date>
+  <millis>1548428734525</millis>
+  <sequence>98</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:34</date>
+  <millis>1548428734536</millis>
+  <sequence>99</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>checkForUSDCurrency TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:34</date>
+  <millis>1548428734537</millis>
+  <sequence>100</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:34</date>
+  <millis>1548428734805</millis>
+  <sequence>101</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:37</date>
+  <millis>1548428737573</millis>
+  <sequence>102</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUSDCurrency</method>
+  <thread>12</thread>
+  <message>checkForUSDCurrency TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:38</date>
+  <millis>1548428738749</millis>
+  <sequence>103</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:43</date>
+  <millis>1548428743879</millis>
+  <sequence>105</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:43</date>
+  <millis>1548428743889</millis>
+  <sequence>106</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>checkCurrencySignInSearchedElements TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:43</date>
+  <millis>1548428743889</millis>
+  <sequence>107</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:44</date>
+  <millis>1548428744152</millis>
+  <sequence>108</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:46</date>
+  <millis>1548428746066</millis>
+  <sequence>109</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:46</date>
+  <millis>1548428746066</millis>
+  <sequence>110</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:47</date>
+  <millis>1548428747912</millis>
+  <sequence>111</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkCurrencySignInSearchedElements</method>
+  <thread>12</thread>
+  <message>checkCurrencySignInSearchedElements TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:49</date>
+  <millis>1548428749121</millis>
+  <sequence>112</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:54</date>
+  <millis>1548428754390</millis>
+  <sequence>114</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:54</date>
+  <millis>1548428754400</millis>
+  <sequence>115</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:54</date>
+  <millis>1548428754400</millis>
+  <sequence>116</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:54</date>
+  <millis>1548428754673</millis>
+  <sequence>117</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:56</date>
+  <millis>1548428756557</millis>
+  <sequence>118</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:56</date>
+  <millis>1548428756557</millis>
+  <sequence>119</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:58</date>
+  <millis>1548428758092</millis>
+  <sequence>120</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:58</date>
+  <millis>1548428758362</millis>
+  <sequence>121</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
+</record>
+<record>
+  <date>2019-01-25T17:05:58</date>
+  <millis>1548428758953</millis>
+  <sequence>122</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistsTest</method>
+  <thread>12</thread>
+  <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:00</date>
+  <millis>1548428760496</millis>
+  <sequence>123</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:05</date>
+  <millis>1548428765641</millis>
+  <sequence>125</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:05</date>
+  <millis>1548428765654</millis>
+  <sequence>126</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>checkSearchGoodsByCountOfElements TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:05</date>
+  <millis>1548428765654</millis>
+  <sequence>127</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:05</date>
+  <millis>1548428765654</millis>
+  <sequence>128</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:07</date>
+  <millis>1548428767285</millis>
+  <sequence>129</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSearchGoodsByCountOfElements</method>
+  <thread>12</thread>
+  <message>checkSearchGoodsByCountOfElements TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:08</date>
+  <millis>1548428768806</millis>
+  <sequence>130</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:14</date>
+  <millis>1548428774046</millis>
+  <sequence>132</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:14</date>
+  <millis>1548428774059</millis>
+  <sequence>133</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>checkSortingByPrice TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:14</date>
+  <millis>1548428774060</millis>
+  <sequence>134</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:14</date>
+  <millis>1548428774328</millis>
+  <sequence>135</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:16</date>
+  <millis>1548428776334</millis>
+  <sequence>136</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'SEARCH FIELD'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:16</date>
+  <millis>1548428776334</millis>
+  <sequence>137</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Writing into the 'SEARCH FIELD' text = dress</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:17</date>
+  <millis>1548428777743</millis>
+  <sequence>138</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:18</date>
+  <millis>1548428778012</millis>
+  <sequence>139</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:21</date>
+  <millis>1548428781423</millis>
+  <sequence>140</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkSortingByPrice</method>
+  <thread>12</thread>
+  <message>checkSortingByPrice TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-25T17:06:22</date>
+  <millis>1548428782631</millis>
+  <sequence>141</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+</log>

@@ -1,9 +1,12 @@
 package view;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
 import java.util.List;
 
@@ -11,7 +14,7 @@ public class MainPage extends BaseTest {
 
     private static String MAIN_PAGE_URL = "http://prestashop-automation.qatestlab.com.ua/ru/";
 
-    @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Валюта:'])[1]/following::span[1]")
+    @FindBy(xpath = "//*[@class='expand-more _gray-darker hidden-sm-down']")
     private WebElement currencySignButton;
 
     @FindBy(xpath = "//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")
@@ -23,12 +26,6 @@ public class MainPage extends BaseTest {
     @FindBy(xpath = "//*[@id='content']/section/div/*")
     private List<WebElement> listOfPopularGoods;
 
-    @FindBy(xpath = "//*[@id='search_widget']/form/input[2]")
-    private WebElement searchField;
-
-    @FindBy(xpath = "//*[@id='search_widget']/form/button/i")
-    private WebElement searchButton;
-
     public MainPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
@@ -39,19 +36,31 @@ public class MainPage extends BaseTest {
     }
 
     public void clickCurrencyDropDownButton() {
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         currencySignButton.click();
     }
 
     public void clickEURCurrencyDropDownButton() {
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")));
         eurElementCurrencySignButton.click();
     }
 
     public void clickUSDCurrencyDropDownButton() {
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@id='_desktop_currency_selector']/div/ul/li[3]/a")));
         usdElementCurrencySignButton.click();
     }
 
     public String getCurrencySign() {
         int one = 1;
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         String textCurrencySignButton = currencySignButton.getText();
         char[] arrayCurrencySignButton = textCurrencySignButton.toCharArray();
         String currencySign = String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
@@ -59,10 +68,16 @@ public class MainPage extends BaseTest {
     }
 
     public List<WebElement> getListOfPopularGoods() {
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@id='content']/section/div/*")));
         return listOfPopularGoods;
     }
 
     public WebElement getCurrencySignButton() {
+        new WebDriverWait(webDriver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         return currencySignButton;
     }
 }

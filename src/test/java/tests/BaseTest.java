@@ -10,7 +10,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import view.MainPage;
 import view.SearchPage;
-import java.util.concurrent.TimeUnit;
+import static tests.ProjectLogger.logger;
 
 public class BaseTest {
 
@@ -20,6 +20,8 @@ public class BaseTest {
     protected MainPage mainPage;
     protected SearchPage searchPage;
     protected static String SEARCH_TEXT = "dress";
+
+    private static final ProjectLogger projectLogger = new ProjectLogger();
 
     @Parameters("browser")
     @BeforeMethod
@@ -38,13 +40,14 @@ public class BaseTest {
 
         webDriver.manage().window().maximize();
         webDriver.get("http://prestashop-automation.qatestlab.com.ua/ru/");
-        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        logger.info("Main Page opened");
         mainPage = new MainPage(webDriver);
         searchPage = new SearchPage(webDriver);
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        webDriver.quit();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        webDriver.quit();
+        logger.info("Web Page closed");
+    }
 }

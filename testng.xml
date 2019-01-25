@@ -17,11 +17,4 @@
         </classes>
     </test>
 
-    <!--<test name="Tests On IE">-->
-    <!--<parameter name="browser" value="ie"/>-->
-    <!--<classes>-->
-    <!--<class name="tests.MainPageTest"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-
 </suite>
