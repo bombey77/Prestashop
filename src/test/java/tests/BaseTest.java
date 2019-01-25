@@ -15,7 +15,6 @@ import static tests.ProjectLogger.logger;
 public class BaseTest {
 
     private String path;
-    protected static String MAIN_PAGE_TITLE = "prestashop-automation";
     protected WebDriver webDriver;
     protected MainPage mainPage;
     protected SearchPage searchPage;

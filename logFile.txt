@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-01-25T17:03:54</date>
-  <millis>1548428634058</millis>
+  <date>2019-01-25T18:21:54</date>
+  <millis>1548433314782</millis>
   <sequence>1</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:03:54</date>
-  <millis>1548428634272</millis>
+  <date>2019-01-25T18:21:55</date>
+  <millis>1548433315024</millis>
   <sequence>2</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>checkClickUSDCurrencyDropDownButton TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:03:54</date>
-  <millis>1548428634272</millis>
+  <date>2019-01-25T18:21:55</date>
+  <millis>1548433315024</millis>
   <sequence>3</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:03:54</date>
-  <millis>1548428634375</millis>
+  <date>2019-01-25T18:21:55</date>
+  <millis>1548433315121</millis>
   <sequence>4</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:03:56</date>
-  <millis>1548428636450</millis>
+  <date>2019-01-25T18:21:57</date>
+  <millis>1548433317275</millis>
   <sequence>5</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>checkClickUSDCurrencyDropDownButton TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:03:57</date>
-  <millis>1548428637118</millis>
+  <date>2019-01-25T18:21:57</date>
+  <millis>1548433317971</millis>
   <sequence>6</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:02</date>
-  <millis>1548428642618</millis>
+  <date>2019-01-25T18:22:03</date>
+  <millis>1548433323577</millis>
   <sequence>8</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -79,8 +79,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:02</date>
-  <millis>1548428642626</millis>
+  <date>2019-01-25T18:22:03</date>
+  <millis>1548433323584</millis>
   <sequence>9</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -90,8 +90,8 @@
   <message>checkForUAHCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:02</date>
-  <millis>1548428642626</millis>
+  <date>2019-01-25T18:22:03</date>
+  <millis>1548433323584</millis>
   <sequence>10</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -101,8 +101,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:02</date>
-  <millis>1548428642713</millis>
+  <date>2019-01-25T18:22:03</date>
+  <millis>1548433323673</millis>
   <sequence>11</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -112,8 +112,8 @@
   <message>Clicking at the 'EUR Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:05</date>
-  <millis>1548428645896</millis>
+  <date>2019-01-25T18:22:06</date>
+  <millis>1548433326076</millis>
   <sequence>12</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -123,8 +123,8 @@
   <message>checkForUAHCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:06</date>
-  <millis>1548428646490</millis>
+  <date>2019-01-25T18:22:06</date>
+  <millis>1548433326720</millis>
   <sequence>13</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -134,8 +134,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:11</date>
-  <millis>1548428651410</millis>
+  <date>2019-01-25T18:22:11</date>
+  <millis>1548433331788</millis>
   <sequence>15</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -145,8 +145,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:11</date>
-  <millis>1548428651419</millis>
+  <date>2019-01-25T18:22:11</date>
+  <millis>1548433331795</millis>
   <sequence>16</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -156,8 +156,8 @@
   <message>checkForUAHCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:11</date>
-  <millis>1548428651562</millis>
+  <date>2019-01-25T18:22:11</date>
+  <millis>1548433331938</millis>
   <sequence>17</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -167,8 +167,8 @@
   <message>Element 0 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:11</date>
-  <millis>1548428651728</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332094</millis>
   <sequence>18</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -178,8 +178,8 @@
   <message>Element 1 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:11</date>
-  <millis>1548428651883</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332246</millis>
   <sequence>19</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -189,8 +189,8 @@
   <message>Element 2 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:12</date>
-  <millis>1548428652032</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332393</millis>
   <sequence>20</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -200,8 +200,8 @@
   <message>Element 3 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:12</date>
-  <millis>1548428652178</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332538</millis>
   <sequence>21</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -211,8 +211,8 @@
   <message>Element 4 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:12</date>
-  <millis>1548428652325</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332689</millis>
   <sequence>22</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -222,8 +222,8 @@
   <message>Element 5 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:12</date>
-  <millis>1548428652457</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332848</millis>
   <sequence>23</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -233,8 +233,8 @@
   <message>Element 6 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:12</date>
-  <millis>1548428652529</millis>
+  <date>2019-01-25T18:22:12</date>
+  <millis>1548433332928</millis>
   <sequence>24</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -244,8 +244,8 @@
   <message>checkForUAHCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:13</date>
-  <millis>1548428653182</millis>
+  <date>2019-01-25T18:22:13</date>
+  <millis>1548433333584</millis>
   <sequence>25</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -255,8 +255,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:18</date>
-  <millis>1548428658469</millis>
+  <date>2019-01-25T18:22:18</date>
+  <millis>1548433338901</millis>
   <sequence>27</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -266,8 +266,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:18</date>
-  <millis>1548428658480</millis>
+  <date>2019-01-25T18:22:18</date>
+  <millis>1548433338910</millis>
   <sequence>28</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -277,8 +277,8 @@
   <message>checkForUSDCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:18</date>
-  <millis>1548428658480</millis>
+  <date>2019-01-25T18:22:18</date>
+  <millis>1548433338910</millis>
   <sequence>29</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -288,8 +288,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:18</date>
-  <millis>1548428658573</millis>
+  <date>2019-01-25T18:22:18</date>
+  <millis>1548433338991</millis>
   <sequence>30</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -299,8 +299,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:21</date>
-  <millis>1548428661505</millis>
+  <date>2019-01-25T18:22:21</date>
+  <millis>1548433341871</millis>
   <sequence>31</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -310,8 +310,8 @@
   <message>checkForUSDCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:22</date>
-  <millis>1548428662178</millis>
+  <date>2019-01-25T18:22:22</date>
+  <millis>1548433342520</millis>
   <sequence>32</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -321,8 +321,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:27</date>
-  <millis>1548428667448</millis>
+  <date>2019-01-25T18:22:27</date>
+  <millis>1548433347840</millis>
   <sequence>34</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -332,8 +332,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:27</date>
-  <millis>1548428667456</millis>
+  <date>2019-01-25T18:22:27</date>
+  <millis>1548433347848</millis>
   <sequence>35</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -343,8 +343,8 @@
   <message>checkCurrencySignInSearchedElements TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:27</date>
-  <millis>1548428667456</millis>
+  <date>2019-01-25T18:22:27</date>
+  <millis>1548433347848</millis>
   <sequence>36</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -354,8 +354,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:27</date>
-  <millis>1548428667530</millis>
+  <date>2019-01-25T18:22:27</date>
+  <millis>1548433347940</millis>
   <sequence>37</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -365,8 +365,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:29</date>
-  <millis>1548428669541</millis>
+  <date>2019-01-25T18:22:29</date>
+  <millis>1548433349884</millis>
   <sequence>38</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -376,8 +376,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:29</date>
-  <millis>1548428669541</millis>
+  <date>2019-01-25T18:22:29</date>
+  <millis>1548433349884</millis>
   <sequence>39</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -387,8 +387,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:31</date>
-  <millis>1548428671675</millis>
+  <date>2019-01-25T18:22:32</date>
+  <millis>1548433352081</millis>
   <sequence>40</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -398,8 +398,8 @@
   <message>checkCurrencySignInSearchedElements TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:32</date>
-  <millis>1548428672353</millis>
+  <date>2019-01-25T18:22:32</date>
+  <millis>1548433352727</millis>
   <sequence>41</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -409,8 +409,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:37</date>
-  <millis>1548428677611</millis>
+  <date>2019-01-25T18:22:37</date>
+  <millis>1548433357823</millis>
   <sequence>43</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -420,8 +420,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:37</date>
-  <millis>1548428677633</millis>
+  <date>2019-01-25T18:22:37</date>
+  <millis>1548433357838</millis>
   <sequence>44</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -431,8 +431,8 @@
   <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:37</date>
-  <millis>1548428677633</millis>
+  <date>2019-01-25T18:22:37</date>
+  <millis>1548433357839</millis>
   <sequence>45</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -442,8 +442,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:37</date>
-  <millis>1548428677714</millis>
+  <date>2019-01-25T18:22:37</date>
+  <millis>1548433357956</millis>
   <sequence>46</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -453,8 +453,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:39</date>
-  <millis>1548428679726</millis>
+  <date>2019-01-25T18:22:39</date>
+  <millis>1548433359920</millis>
   <sequence>47</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -464,8 +464,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:39</date>
-  <millis>1548428679727</millis>
+  <date>2019-01-25T18:22:39</date>
+  <millis>1548433359921</millis>
   <sequence>48</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -475,8 +475,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:41</date>
-  <millis>1548428681561</millis>
+  <date>2019-01-25T18:22:41</date>
+  <millis>1548433361637</millis>
   <sequence>49</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -486,8 +486,8 @@
   <message>Clicking at the 'Sorting Drop Down List'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:41</date>
-  <millis>1548428681625</millis>
+  <date>2019-01-25T18:22:41</date>
+  <millis>1548433361723</millis>
   <sequence>50</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -497,8 +497,8 @@
   <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:42</date>
-  <millis>1548428682062</millis>
+  <date>2019-01-25T18:22:42</date>
+  <millis>1548433362119</millis>
   <sequence>51</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -508,8 +508,8 @@
   <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:42</date>
-  <millis>1548428682725</millis>
+  <date>2019-01-25T18:22:42</date>
+  <millis>1548433362771</millis>
   <sequence>52</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -519,8 +519,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:48</date>
-  <millis>1548428688016</millis>
+  <date>2019-01-25T18:22:47</date>
+  <millis>1548433367918</millis>
   <sequence>54</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -530,8 +530,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:48</date>
-  <millis>1548428688031</millis>
+  <date>2019-01-25T18:22:47</date>
+  <millis>1548433367931</millis>
   <sequence>55</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -541,8 +541,8 @@
   <message>checkSearchGoodsByCountOfElements TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:48</date>
-  <millis>1548428688031</millis>
+  <date>2019-01-25T18:22:47</date>
+  <millis>1548433367932</millis>
   <sequence>56</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -552,8 +552,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:48</date>
-  <millis>1548428688032</millis>
+  <date>2019-01-25T18:22:47</date>
+  <millis>1548433367932</millis>
   <sequence>57</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -563,8 +563,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:49</date>
-  <millis>1548428689807</millis>
+  <date>2019-01-25T18:22:49</date>
+  <millis>1548433369706</millis>
   <sequence>58</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -574,8 +574,8 @@
   <message>checkSearchGoodsByCountOfElements TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:50</date>
-  <millis>1548428690465</millis>
+  <date>2019-01-25T18:22:50</date>
+  <millis>1548433370368</millis>
   <sequence>59</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -585,8 +585,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:55</date>
-  <millis>1548428695758</millis>
+  <date>2019-01-25T18:22:55</date>
+  <millis>1548433375661</millis>
   <sequence>61</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -596,8 +596,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:55</date>
-  <millis>1548428695772</millis>
+  <date>2019-01-25T18:22:55</date>
+  <millis>1548433375680</millis>
   <sequence>62</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -607,8 +607,8 @@
   <message>checkSortingByPrice TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:55</date>
-  <millis>1548428695772</millis>
+  <date>2019-01-25T18:22:55</date>
+  <millis>1548433375680</millis>
   <sequence>63</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -618,8 +618,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:55</date>
-  <millis>1548428695877</millis>
+  <date>2019-01-25T18:22:55</date>
+  <millis>1548433375775</millis>
   <sequence>64</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -629,8 +629,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:57</date>
-  <millis>1548428697879</millis>
+  <date>2019-01-25T18:22:57</date>
+  <millis>1548433377821</millis>
   <sequence>65</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -640,8 +640,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:57</date>
-  <millis>1548428697880</millis>
+  <date>2019-01-25T18:22:57</date>
+  <millis>1548433377821</millis>
   <sequence>66</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -651,8 +651,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:59</date>
-  <millis>1548428699497</millis>
+  <date>2019-01-25T18:22:59</date>
+  <millis>1548433379545</millis>
   <sequence>67</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -662,8 +662,8 @@
   <message>Clicking at the 'Sorting Drop Down List'</message>
 </record>
 <record>
-  <date>2019-01-25T17:04:59</date>
-  <millis>1548428699571</millis>
+  <date>2019-01-25T18:22:59</date>
+  <millis>1548433379632</millis>
   <sequence>68</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -673,8 +673,8 @@
   <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:02</date>
-  <millis>1548428702980</millis>
+  <date>2019-01-25T18:23:03</date>
+  <millis>1548433383041</millis>
   <sequence>69</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -684,8 +684,8 @@
   <message>checkSortingByPrice TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:03</date>
-  <millis>1548428703635</millis>
+  <date>2019-01-25T18:23:03</date>
+  <millis>1548433383673</millis>
   <sequence>70</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -695,8 +695,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:08</date>
-  <millis>1548428708991</millis>
+  <date>2019-01-25T18:23:09</date>
+  <millis>1548433389079</millis>
   <sequence>72</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -706,8 +706,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:09</date>
-  <millis>1548428709002</millis>
+  <date>2019-01-25T18:23:09</date>
+  <millis>1548433389095</millis>
   <sequence>73</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -717,8 +717,8 @@
   <message>checkClickUSDCurrencyDropDownButton TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:09</date>
-  <millis>1548428709003</millis>
+  <date>2019-01-25T18:23:09</date>
+  <millis>1548433389096</millis>
   <sequence>74</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -728,8 +728,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:09</date>
-  <millis>1548428709275</millis>
+  <date>2019-01-25T18:23:09</date>
+  <millis>1548433389366</millis>
   <sequence>75</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -739,8 +739,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:11</date>
-  <millis>1548428711271</millis>
+  <date>2019-01-25T18:23:13</date>
+  <millis>1548433393863</millis>
   <sequence>76</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -750,8 +750,8 @@
   <message>checkClickUSDCurrencyDropDownButton TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:12</date>
-  <millis>1548428712547</millis>
+  <date>2019-01-25T18:23:15</date>
+  <millis>1548433395333</millis>
   <sequence>77</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -761,8 +761,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:17</date>
-  <millis>1548428717712</millis>
+  <date>2019-01-25T18:23:20</date>
+  <millis>1548433400560</millis>
   <sequence>79</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -772,8 +772,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:17</date>
-  <millis>1548428717725</millis>
+  <date>2019-01-25T18:23:20</date>
+  <millis>1548433400568</millis>
   <sequence>80</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -783,8 +783,8 @@
   <message>checkForUAHCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:17</date>
-  <millis>1548428717725</millis>
+  <date>2019-01-25T18:23:20</date>
+  <millis>1548433400569</millis>
   <sequence>81</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -794,8 +794,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:18</date>
-  <millis>1548428718004</millis>
+  <date>2019-01-25T18:23:20</date>
+  <millis>1548433400865</millis>
   <sequence>82</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -805,8 +805,8 @@
   <message>Clicking at the 'EUR Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:20</date>
-  <millis>1548428720320</millis>
+  <date>2019-01-25T18:23:23</date>
+  <millis>1548433403242</millis>
   <sequence>83</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -816,8 +816,8 @@
   <message>checkForUAHCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:21</date>
-  <millis>1548428721557</millis>
+  <date>2019-01-25T18:23:24</date>
+  <millis>1548433404594</millis>
   <sequence>84</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -827,8 +827,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:26</date>
-  <millis>1548428726691</millis>
+  <date>2019-01-25T18:23:29</date>
+  <millis>1548433409474</millis>
   <sequence>86</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -838,8 +838,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:26</date>
-  <millis>1548428726710</millis>
+  <date>2019-01-25T18:23:29</date>
+  <millis>1548433409499</millis>
   <sequence>87</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -849,8 +849,8 @@
   <message>checkForUAHCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:26</date>
-  <millis>1548428726883</millis>
+  <date>2019-01-25T18:23:29</date>
+  <millis>1548433409666</millis>
   <sequence>88</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -860,8 +860,8 @@
   <message>Element 0 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727081</millis>
+  <date>2019-01-25T18:23:29</date>
+  <millis>1548433409862</millis>
   <sequence>89</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -871,8 +871,8 @@
   <message>Element 1 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727239</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410014</millis>
   <sequence>90</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -882,8 +882,8 @@
   <message>Element 2 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727440</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410183</millis>
   <sequence>91</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -893,8 +893,8 @@
   <message>Element 3 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727604</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410346</millis>
   <sequence>92</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -904,8 +904,8 @@
   <message>Element 4 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727754</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410492</millis>
   <sequence>93</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -915,8 +915,8 @@
   <message>Element 5 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727903</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410646</millis>
   <sequence>94</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -926,8 +926,8 @@
   <message>Element 6 has sign = ₴</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:27</date>
-  <millis>1548428727978</millis>
+  <date>2019-01-25T18:23:30</date>
+  <millis>1548433410733</millis>
   <sequence>95</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -937,8 +937,8 @@
   <message>checkForUAHCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:29</date>
-  <millis>1548428729363</millis>
+  <date>2019-01-25T18:23:32</date>
+  <millis>1548433412183</millis>
   <sequence>96</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -948,8 +948,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:34</date>
-  <millis>1548428734525</millis>
+  <date>2019-01-25T18:23:37</date>
+  <millis>1548433417399</millis>
   <sequence>98</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -959,8 +959,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:34</date>
-  <millis>1548428734536</millis>
+  <date>2019-01-25T18:23:37</date>
+  <millis>1548433417422</millis>
   <sequence>99</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -970,8 +970,8 @@
   <message>checkForUSDCurrency TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:34</date>
-  <millis>1548428734537</millis>
+  <date>2019-01-25T18:23:37</date>
+  <millis>1548433417422</millis>
   <sequence>100</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -981,8 +981,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:34</date>
-  <millis>1548428734805</millis>
+  <date>2019-01-25T18:23:37</date>
+  <millis>1548433417684</millis>
   <sequence>101</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -992,8 +992,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:37</date>
-  <millis>1548428737573</millis>
+  <date>2019-01-25T18:23:40</date>
+  <millis>1548433420535</millis>
   <sequence>102</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1003,8 +1003,8 @@
   <message>checkForUSDCurrency TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:38</date>
-  <millis>1548428738749</millis>
+  <date>2019-01-25T18:23:41</date>
+  <millis>1548433421834</millis>
   <sequence>103</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1014,8 +1014,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:43</date>
-  <millis>1548428743879</millis>
+  <date>2019-01-25T18:23:46</date>
+  <millis>1548433426708</millis>
   <sequence>105</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1025,8 +1025,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:43</date>
-  <millis>1548428743889</millis>
+  <date>2019-01-25T18:23:46</date>
+  <millis>1548433426722</millis>
   <sequence>106</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1036,8 +1036,8 @@
   <message>checkCurrencySignInSearchedElements TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:43</date>
-  <millis>1548428743889</millis>
+  <date>2019-01-25T18:23:46</date>
+  <millis>1548433426722</millis>
   <sequence>107</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1047,8 +1047,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:44</date>
-  <millis>1548428744152</millis>
+  <date>2019-01-25T18:23:46</date>
+  <millis>1548433426982</millis>
   <sequence>108</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1058,8 +1058,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:46</date>
-  <millis>1548428746066</millis>
+  <date>2019-01-25T18:23:48</date>
+  <millis>1548433428928</millis>
   <sequence>109</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1069,8 +1069,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:46</date>
-  <millis>1548428746066</millis>
+  <date>2019-01-25T18:23:48</date>
+  <millis>1548433428928</millis>
   <sequence>110</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1080,8 +1080,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:47</date>
-  <millis>1548428747912</millis>
+  <date>2019-01-25T18:23:50</date>
+  <millis>1548433430805</millis>
   <sequence>111</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1091,8 +1091,8 @@
   <message>checkCurrencySignInSearchedElements TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:49</date>
-  <millis>1548428749121</millis>
+  <date>2019-01-25T18:23:52</date>
+  <millis>1548433432252</millis>
   <sequence>112</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1102,8 +1102,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:54</date>
-  <millis>1548428754390</millis>
+  <date>2019-01-25T18:23:57</date>
+  <millis>1548433437054</millis>
   <sequence>114</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1113,8 +1113,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:54</date>
-  <millis>1548428754400</millis>
+  <date>2019-01-25T18:23:57</date>
+  <millis>1548433437061</millis>
   <sequence>115</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1124,8 +1124,8 @@
   <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:54</date>
-  <millis>1548428754400</millis>
+  <date>2019-01-25T18:23:57</date>
+  <millis>1548433437061</millis>
   <sequence>116</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1135,8 +1135,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:54</date>
-  <millis>1548428754673</millis>
+  <date>2019-01-25T18:23:57</date>
+  <millis>1548433437334</millis>
   <sequence>117</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1146,8 +1146,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:56</date>
-  <millis>1548428756557</millis>
+  <date>2019-01-25T18:23:59</date>
+  <millis>1548433439262</millis>
   <sequence>118</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1157,8 +1157,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:56</date>
-  <millis>1548428756557</millis>
+  <date>2019-01-25T18:23:59</date>
+  <millis>1548433439262</millis>
   <sequence>119</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1168,8 +1168,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:58</date>
-  <millis>1548428758092</millis>
+  <date>2019-01-25T18:24:00</date>
+  <millis>1548433440676</millis>
   <sequence>120</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1179,8 +1179,8 @@
   <message>Clicking at the 'Sorting Drop Down List'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:58</date>
-  <millis>1548428758362</millis>
+  <date>2019-01-25T18:24:00</date>
+  <millis>1548433440956</millis>
   <sequence>121</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1190,8 +1190,8 @@
   <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
 </record>
 <record>
-  <date>2019-01-25T17:05:58</date>
-  <millis>1548428758953</millis>
+  <date>2019-01-25T18:24:01</date>
+  <millis>1548433441519</millis>
   <sequence>122</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1201,8 +1201,8 @@
   <message>checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:00</date>
-  <millis>1548428760496</millis>
+  <date>2019-01-25T18:24:02</date>
+  <millis>1548433442911</millis>
   <sequence>123</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1212,8 +1212,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:05</date>
-  <millis>1548428765641</millis>
+  <date>2019-01-25T18:24:07</date>
+  <millis>1548433447761</millis>
   <sequence>125</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1223,8 +1223,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:05</date>
-  <millis>1548428765654</millis>
+  <date>2019-01-25T18:24:07</date>
+  <millis>1548433447773</millis>
   <sequence>126</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1234,8 +1234,8 @@
   <message>checkSearchGoodsByCountOfElements TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:05</date>
-  <millis>1548428765654</millis>
+  <date>2019-01-25T18:24:07</date>
+  <millis>1548433447773</millis>
   <sequence>127</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1245,8 +1245,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:05</date>
-  <millis>1548428765654</millis>
+  <date>2019-01-25T18:24:07</date>
+  <millis>1548433447774</millis>
   <sequence>128</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1256,8 +1256,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:07</date>
-  <millis>1548428767285</millis>
+  <date>2019-01-25T18:24:09</date>
+  <millis>1548433449218</millis>
   <sequence>129</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1267,8 +1267,8 @@
   <message>checkSearchGoodsByCountOfElements TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:08</date>
-  <millis>1548428768806</millis>
+  <date>2019-01-25T18:24:10</date>
+  <millis>1548433450699</millis>
   <sequence>130</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1278,8 +1278,8 @@
   <message>Web Page closed</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:14</date>
-  <millis>1548428774046</millis>
+  <date>2019-01-25T18:24:15</date>
+  <millis>1548433455547</millis>
   <sequence>132</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1289,8 +1289,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:14</date>
-  <millis>1548428774059</millis>
+  <date>2019-01-25T18:24:15</date>
+  <millis>1548433455565</millis>
   <sequence>133</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1300,8 +1300,8 @@
   <message>checkSortingByPrice TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:14</date>
-  <millis>1548428774060</millis>
+  <date>2019-01-25T18:24:15</date>
+  <millis>1548433455565</millis>
   <sequence>134</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1311,8 +1311,8 @@
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:14</date>
-  <millis>1548428774328</millis>
+  <date>2019-01-25T18:24:15</date>
+  <millis>1548433455826</millis>
   <sequence>135</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1322,8 +1322,8 @@
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:16</date>
-  <millis>1548428776334</millis>
+  <date>2019-01-25T18:24:17</date>
+  <millis>1548433457703</millis>
   <sequence>136</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1333,8 +1333,8 @@
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:16</date>
-  <millis>1548428776334</millis>
+  <date>2019-01-25T18:24:17</date>
+  <millis>1548433457703</millis>
   <sequence>137</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1344,8 +1344,8 @@
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:17</date>
-  <millis>1548428777743</millis>
+  <date>2019-01-25T18:24:19</date>
+  <millis>1548433459085</millis>
   <sequence>138</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1355,8 +1355,8 @@
   <message>Clicking at the 'Sorting Drop Down List'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:18</date>
-  <millis>1548428778012</millis>
+  <date>2019-01-25T18:24:19</date>
+  <millis>1548433459364</millis>
   <sequence>139</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1366,8 +1366,8 @@
   <message>Clicking at the 'Sorting Drop Down List Item From Max To Min price'</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:21</date>
-  <millis>1548428781423</millis>
+  <date>2019-01-25T18:24:22</date>
+  <millis>1548433462853</millis>
   <sequence>140</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -1377,8 +1377,8 @@
   <message>checkSortingByPrice TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-25T17:06:22</date>
-  <millis>1548428782631</millis>
+  <date>2019-01-25T18:24:24</date>
+  <millis>1548433464253</millis>
   <sequence>141</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>

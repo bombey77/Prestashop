@@ -65,8 +65,8 @@ public class SearchPage extends BaseTest {
                 .until(ExpectedConditions.visibilityOfElementLocated(
                         By.xpath("//*[@id='js-product-list-top']//p")));
         String[] countOfElementsText = countOfSearchedElements.getText().split(" ");
-        int elements = Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
-        return elements;
+        int element = Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
+        return element;
     }
 
     public boolean findTextInSearchedElements(String text) {

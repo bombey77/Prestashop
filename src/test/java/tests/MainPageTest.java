@@ -6,13 +6,6 @@ import static tests.ProjectLogger.logger;
 
 public class MainPageTest extends BaseTest {
 
-//    @Test(description = "Open the Mane Page")
-//    public void checkOpenMainPage() {
-//        Assert.assertEquals(mainPage.getMainPageTitle(), MAIN_PAGE_TITLE);
-//        logger.info("checkOpenMainPage TEST --- PASSED---");
-//        System.out.println("checkOpenMainPage TEST --- PASSED---");
-//    }
-
     @Test(description = "Checking for UAH currency sign on items")
     public void checkForUAHCurrency() {
         logger.info("checkForUAHCurrency TEST --- STARTED ---");

@@ -12,8 +12,6 @@ import java.util.List;
 
 public class MainPage extends BaseTest {
 
-    private static String MAIN_PAGE_URL = "http://prestashop-automation.qatestlab.com.ua/ru/";
-
     @FindBy(xpath = "//*[@class='expand-more _gray-darker hidden-sm-down']")
     private WebElement currencySignButton;
 
@@ -31,10 +29,6 @@ public class MainPage extends BaseTest {
         PageFactory.initElements(webDriver, this);
     }
 
-    public String getMainPageTitle() {
-        return MAIN_PAGE_TITLE;
-    }
-
     public void clickCurrencyDropDownButton() {
         new WebDriverWait(webDriver, 30)
                 .until(ExpectedConditions.visibilityOfElementLocated(
@@ -43,6 +37,7 @@ public class MainPage extends BaseTest {
     }
 
     public void clickEURCurrencyDropDownButton() {
+
         new WebDriverWait(webDriver, 30)
                 .until(ExpectedConditions.visibilityOfElementLocated(
                         By.xpath("//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")));
@@ -80,4 +75,6 @@ public class MainPage extends BaseTest {
                         By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         return currencySignButton;
     }
+
+
 }
