@@ -15,13 +15,16 @@ public class MainPage extends BaseTest {
     @FindBy(xpath = "//*[@class='expand-more _gray-darker hidden-sm-down']")
     private WebElement currencySignButton;
 
-    @FindBy(xpath = "//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")
-    private WebElement eurElementCurrencySignButton;
+    @FindBy(xpath = "//*[contains(@class,'dropdown-item') and text()='UAH ₴']")
+    private WebElement uahCurrencySignButton;
 
-    @FindBy(xpath = "//*[@id='_desktop_currency_selector']/div/ul/li[3]/a")
-    private WebElement usdElementCurrencySignButton;
+    @FindBy(xpath = "//*[contains(@class,'dropdown-item') and text()='EUR €']")
+    private WebElement eurCurrencySignButton;
 
-    @FindBy(xpath = "//*[@id='content']/section/div/*")
+    @FindBy(xpath = "//*[contains(@class,'dropdown-item') and text()='USD $']")
+    private WebElement usdCurrencySignButton;
+
+    @FindBy(xpath = "//*[@class='products']/article")
     private List<WebElement> listOfPopularGoods;
 
     public MainPage(WebDriver webDriver) {
@@ -29,27 +32,53 @@ public class MainPage extends BaseTest {
         PageFactory.initElements(webDriver, this);
     }
 
-    public void clickCurrencyDropDownButton() {
+    public void clickCurrencyButton() {
         new WebDriverWait(webDriver, 30)
                 .until(ExpectedConditions.visibilityOfElementLocated(
                         By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         currencySignButton.click();
     }
 
-    public void clickEURCurrencyDropDownButton() {
-
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@id='_desktop_currency_selector']/div/ul/li[1]/a")));
-        eurElementCurrencySignButton.click();
+    public void clickCurrencyDropDownButton(CurrencyButton button) {
+        switch(button) {
+            case EUR:
+                new WebDriverWait(webDriver, 30)
+                        .until(ExpectedConditions.visibilityOfElementLocated(
+                                By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
+                eurCurrencySignButton.click();
+                break;
+            case USD:
+                new WebDriverWait(webDriver, 30)
+                        .until(ExpectedConditions.visibilityOfElementLocated(
+                                By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
+                usdCurrencySignButton.click();
+                break;
+            case UAH:
+                new WebDriverWait(webDriver, 30)
+                        .until(ExpectedConditions.visibilityOfElementLocated(
+                                By.xpath("//*[contains(@class,'dropdown-item') and text()='UAH ₴']")));
+                uahCurrencySignButton.click();
+                break;
+            default:
+                System.out.println("Currency button wasn't chosen");
+                break;
+        }
     }
 
-    public void clickUSDCurrencyDropDownButton() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@id='_desktop_currency_selector']/div/ul/li[3]/a")));
-        usdElementCurrencySignButton.click();
-    }
+//    public void clickEURCurrencyDropDownButton() {
+//
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
+//        eurCurrencySignButton.click();
+//    }
+//
+//    public void clickUSDCurrencyDropDownButton() {
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
+//        usdCurrencySignButton.click();
+//    }
 
     public String getCurrencySign() {
         int one = 1;
@@ -65,7 +94,7 @@ public class MainPage extends BaseTest {
     public List<WebElement> getListOfPopularGoods() {
         new WebDriverWait(webDriver, 30)
                 .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@id='content']/section/div/*")));
+                        By.xpath("//*[@class='products']/article")));
         return listOfPopularGoods;
     }
 

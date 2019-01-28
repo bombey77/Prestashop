@@ -3,6 +3,9 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+import view.CurrencyButton;
+import view.SearchPage;
+
 import static tests.ProjectLogger.logger;
 
 
@@ -40,9 +43,9 @@ public class SearchPageTest extends BaseTest {
         logger.info("checkCurrencySignInSearchedElements TEST --- STARTED ---");
         System.out.println("checkCurrencySignInSearchedElements TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
@@ -56,15 +59,15 @@ public class SearchPageTest extends BaseTest {
         logger.info("checkSortingByPrice TEST --- STARTED ---");
         System.out.println("checkSortingByPrice TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-        logger.info("Clicking at the 'Sorting Drop Down List'");
+        logger.info("Clicking at the 'Drop Down List'");
         searchPage.clickSortingDropDownList();
-        logger.info("Clicking at the 'Sorting Drop Down List Item From Max To Min price'");
+        logger.info("Clicking at the 'List Item Sorting From Max To Min price'");
         searchPage.clickSortingDropDownListItemMaxToMin();
         Assert.assertTrue(searchPage.sortingGoodsByPrice());
         logger.info("checkSortingByPrice TEST --- PASSED---");
@@ -72,45 +75,48 @@ public class SearchPageTest extends BaseTest {
     }
 
     @Test(description = "Checking the regular and discount price are exist")
-    public void checkProductRegularAndDiscountPriceAreExistsTest() {
-        logger.info("checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED ---");
-        System.out.println("checkProductRegularAndDiscountPriceAreExistsTest TEST --- STARTED---");
+    public void checkProductRegularAndDiscountPriceAreExistTest() {
+        logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- STARTED ---");
+        System.out.println("checkProductRegularAndDiscountPriceAreExistTest TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-        logger.info("Clicking at the 'Sorting Drop Down List'");
+        logger.info("Clicking at the 'Drop Down List'");
         searchPage.clickSortingDropDownList();
-        logger.info("Clicking at the 'Sorting Drop Down List Item From Max To Min price'");
+        logger.info("Clicking at the 'List Item Sorting From Max To Min price'");
         searchPage.clickSortingDropDownListItemMaxToMin();
-        Assert.assertTrue(searchPage.checkDiscountAndRegularPrice());
-        logger.info("checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---");
-        System.out.println("checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---");
+        searchPage.findGoodsWithDiscount();
+        searchPage.getDiscountProducts().forEach((k,v) -> Assert.assertTrue((v.getRegularPrice() >= 0) && v.getPrice() >= 0));
+        logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
+        System.out.println("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
     }
 
     //тест падает, т.к. дисконт не совпадает
-    @Ignore
+//    @Ignore
     @Test(description = "Checking the discount value")
     public void checkDiscountValueTest() {
         logger.info("checkDiscountValueTest TEST --- STARTED ---");
         System.out.println("checkDiscountValueTest TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-        logger.info("Clicking at the 'Sorting Drop Down List'");
+        logger.info("Clicking at the 'Drop Down List'");
         searchPage.clickSortingDropDownList();
-        logger.info("Clicking at the 'Sorting Drop Down List Item From Max To Min price'");
+        logger.info("Clicking at the 'List Item Sorting From Max To Min price'");
         searchPage.clickSortingDropDownListItemMaxToMin();
-        searchPage.checkDiscountAndRegularPrice();
-        Assert.assertTrue(searchPage.checkDiscountValue());
-        logger.info("checkProductRegularAndDiscountPriceAreExistsTest TEST --- PASSED---");
+//        searchPage.checkDiscountAndRegularPrice();
+        searchPage.findGoodsWithDiscount();
+        searchPage.checkDiscountValue2();
+        searchPage.getDiscounts().forEach((k,v) -> Assert.assertTrue(k.equals(v)));
+        logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
         System.out.println("checkDiscountValueTest TEST --- PASSED---");
     }
 }

@@ -1,9 +1,7 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -25,19 +23,19 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setUp(@Optional("chrome") String browser) {
-        path = System.getProperty("user.dir");
-        if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
-            webDriver = new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", path + "/drivers/geckodriver.exe");
-            webDriver = new FirefoxDriver();
-        } else if (browser.equalsIgnoreCase("ie")){
-            System.setProperty("webdriver.ie.driver", path + "/drivers/IEDriverServer.exe");
-            webDriver = new InternetExplorerDriver();
-        }
+//        path = System.getProperty("user.dir");
+//        if (browser.equalsIgnoreCase("chrome")) {
+//            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
+//            webDriver = new ChromeDriver();
+//        } else if (browser.equalsIgnoreCase("firefox")) {
+//            System.setProperty("webdriver.gecko.driver", path + "/drivers/geckodriver.exe");
+//            webDriver = new FirefoxDriver();
+//        } else if (browser.equalsIgnoreCase("ie")){
+//            System.setProperty("webdriver.ie.driver", path + "/drivers/IEDriverServer.exe");
+//            webDriver = new InternetExplorerDriver();
+//        }
 
-        webDriver.manage().window().maximize();
+        webDriver = DriverManager.getDriverManager(browser);
         webDriver.get("http://prestashop-automation.qatestlab.com.ua/ru/");
         logger.info("Main Page opened");
         mainPage = new MainPage(webDriver);

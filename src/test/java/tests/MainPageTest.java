@@ -2,58 +2,60 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import view.CurrencyButton;
+
 import static tests.ProjectLogger.logger;
 
 public class MainPageTest extends BaseTest {
 
     @Test(description = "Checking for UAH currency sign on items")
-    public void checkForUAHCurrency() {
-        logger.info("checkForUAHCurrency TEST --- STARTED ---");
-        System.out.println("checkForUAHCurrency TEST --- STARTED---");
+    public void checkForUAHCurrencySign() {
+        logger.info("checkForUAHCurrencySign TEST --- STARTED ---");
+        System.out.println("checkForUAHCurrencySign TEST --- STARTED---");
         for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
             String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
             logger.info("Element " + i + " has sign = " + mainPage.getCurrencySign());
             System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
             Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
         }
-        logger.info("checkForUAHCurrency TEST --- PASSED---");
-        System.out.println("checkForUAHCurrency TEST --- PASSED---");
+        logger.info("checkForUAHCurrencySign TEST --- PASSED---");
+        System.out.println("checkForUAHCurrencySign TEST --- PASSED---");
     }
 
     @Test(description = "Checking for EUR currency sign on items")
-    public void checkForEURCurrency() {
-        logger.info("checkForUAHCurrency TEST --- STARTED ---");
-        System.out.println("checkForEURCurrency TEST --- STARTED---");
+    public void checkForEURCurrencySign() {
+        logger.info("checkForUAHCurrencySign TEST --- STARTED ---");
+        System.out.println("checkForEURCurrencySign TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'EUR Currency Button'");
-        mainPage.clickEURCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.EUR);
 
         for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
             String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
             System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
             Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
         }
-        logger.info("checkForUAHCurrency TEST --- PASSED---");
-        System.out.println("checkForEURCurrency TEST --- PASSED---");
+        logger.info("checkForUAHCurrencySign TEST --- PASSED---");
+        System.out.println("checkForEURCurrencySign TEST --- PASSED---");
     }
 
     @Test(description = "Checking for USD currency sign on items")
-    public void checkForUSDCurrency() {
-        logger.info("checkForUSDCurrency TEST --- STARTED ---");
-        System.out.println("checkForUSDCurrency TEST --- STARTED---");
+    public void checkForUSDCurrencySign() {
+        logger.info("checkForUSDCurrencySign TEST --- STARTED ---");
+        System.out.println("checkForUSDCurrencySign TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
 
         for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
             String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
             System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
             Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
         }
-        logger.info("checkForUSDCurrency TEST --- PASSED---");
-        System.out.println("checkForUSDCurrency TEST --- PASSED---");
+        logger.info("checkForUSDCurrencySign TEST --- PASSED---");
+        System.out.println("checkForUSDCurrencySign TEST --- PASSED---");
     }
 
     @Test(description = "Clicking that the USD currency drop-down button was clicked")
@@ -61,9 +63,9 @@ public class MainPageTest extends BaseTest {
         logger.info("checkClickUSDCurrencyDropDownButton TEST --- STARTED ---");
         System.out.println("checkClickUSDCurrencyDropDownButton TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyDropDownButton();
+        mainPage.clickCurrencyButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickUSDCurrencyDropDownButton();
+        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
         String textOfElement = mainPage.getCurrencySignButton().getText();
         Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
         logger.info("checkClickUSDCurrencyDropDownButton TEST --- PASSED---");
