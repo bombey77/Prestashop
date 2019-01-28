@@ -28,12 +28,12 @@
         </classes>
     </test>
 
-    <test name="Tests On IE">
-        <parameter name="browser" value="ie"/>
-        <classes>
-            <class name="tests.MainPageTest"/>
-            <class name="tests.SearchPageTest"/>
-        </classes>
-    </test>
+    <!--<test name="Tests On IE">-->
+        <!--<parameter name="browser" value="ie"/>-->
+        <!--<classes>-->
+            <!--<class name="tests.MainPageTest"/>-->
+            <!--<class name="tests.SearchPageTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 
 </suite>
