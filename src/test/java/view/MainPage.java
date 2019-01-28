@@ -65,21 +65,6 @@ public class MainPage extends BaseTest {
         }
     }
 
-//    public void clickEURCurrencyDropDownButton() {
-//
-//        new WebDriverWait(webDriver, 30)
-//                .until(ExpectedConditions.visibilityOfElementLocated(
-//                        By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
-//        eurCurrencySignButton.click();
-//    }
-//
-//    public void clickUSDCurrencyDropDownButton() {
-//        new WebDriverWait(webDriver, 30)
-//                .until(ExpectedConditions.visibilityOfElementLocated(
-//                        By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
-//        usdCurrencySignButton.click();
-//    }
-
     public String getCurrencySign() {
         int one = 1;
         new WebDriverWait(webDriver, 30)

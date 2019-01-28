@@ -28,8 +28,8 @@ public class DriverManager {
     }
 
     public static void setConfiguredDriver() {
-//        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        webDriver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
     }
 }
