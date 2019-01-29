@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-01-29T13:14:21</date>
-  <millis>1548760461521</millis>
+  <date>2019-01-29T13:19:48</date>
+  <millis>1548760788431</millis>
   <sequence>1</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:21</date>
-  <millis>1548760461817</millis>
+  <date>2019-01-29T13:19:48</date>
+  <millis>1548760788670</millis>
   <sequence>2</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>checkForUAHCurrencySign TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462014</millis>
+  <date>2019-01-29T13:19:48</date>
+  <millis>1548760788952</millis>
   <sequence>3</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Element 0 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462178</millis>
+  <date>2019-01-29T13:19:49</date>
+  <millis>1548760789180</millis>
   <sequence>4</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>Element 1 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462362</millis>
+  <date>2019-01-29T13:19:49</date>
+  <millis>1548760789364</millis>
   <sequence>5</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>Element 2 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462527</millis>
+  <date>2019-01-29T13:19:49</date>
+  <millis>1548760789556</millis>
   <sequence>6</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>Element 3 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462680</millis>
+  <date>2019-01-29T13:19:49</date>
+  <millis>1548760789754</millis>
   <sequence>7</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -79,8 +79,8 @@
   <message>Element 4 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:22</date>
-  <millis>1548760462854</millis>
+  <date>2019-01-29T13:19:49</date>
+  <millis>1548760789919</millis>
   <sequence>8</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -90,8 +90,8 @@
   <message>Element 5 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:23</date>
-  <millis>1548760463031</millis>
+  <date>2019-01-29T13:19:50</date>
+  <millis>1548760790075</millis>
   <sequence>9</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -101,8 +101,8 @@
   <message>Element 6 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:23</date>
-  <millis>1548760463185</millis>
+  <date>2019-01-29T13:19:50</date>
+  <millis>1548760790230</millis>
   <sequence>10</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -112,8 +112,8 @@
   <message>Element 7 has sign = ?</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:23</date>
-  <millis>1548760463264</millis>
+  <date>2019-01-29T13:19:50</date>
+  <millis>1548760790331</millis>
   <sequence>11</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -123,8 +123,8 @@
   <message>checkForUAHCurrencySign TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-29T13:14:23</date>
-  <millis>1548760463953</millis>
+  <date>2019-01-29T13:19:50</date>
+  <millis>1548760790996</millis>
   <sequence>12</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
