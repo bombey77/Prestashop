@@ -14,7 +14,7 @@ public class DriverManager {
     private static String path;
 
     public static WebDriver getDriverManager(String browser) {
-        File chromeDriver = new File("/usr/bin/chromedriver");
+        File chromeDriver = new File("/chromedriver");
 
         path = System.getProperty("user.dir");
         if (browser.equalsIgnoreCase("chrome")) {
