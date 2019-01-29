@@ -7,7 +7,6 @@ import view.CurrencyButton;
 
 import static tests.ProjectLogger.logger;
 
-
 public class SearchPageTest extends BaseTest {
 
     //тест падает, т.к. не все элементы поиска содержат результат поиска

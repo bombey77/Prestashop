@@ -89,6 +89,4 @@ public class MainPage extends BaseTest {
                         By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
         return currencySignButton;
     }
-
-
 }

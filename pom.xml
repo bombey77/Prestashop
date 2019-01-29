@@ -17,8 +17,6 @@
         <allure-testng.version>2.7.0</allure-testng.version>
     </properties>
 
-
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
@@ -40,7 +38,6 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure-testng.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -58,7 +55,7 @@
                 <source>1.8</source>
                 <target>1.8</target>
             </configuration>
-        </plugin>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

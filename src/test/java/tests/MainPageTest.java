@@ -3,7 +3,6 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import view.CurrencyButton;
-
 import static tests.ProjectLogger.logger;
 
 public class MainPageTest extends BaseTest {
