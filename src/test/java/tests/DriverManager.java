@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
@@ -12,9 +14,11 @@ public class DriverManager {
     private static String path;
 
     public static WebDriver getDriverManager(String browser) {
+        File chromeDriver = new File("/usr/bin/chromedriver");
+
         path = System.getProperty("user.dir");
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", path + chromeDriver.getAbsolutePath());
             webDriver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", path + "/drivers/geckodriver.exe");
