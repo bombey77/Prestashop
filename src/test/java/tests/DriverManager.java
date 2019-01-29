@@ -14,7 +14,7 @@ public class DriverManager {
     public static WebDriver getDriverManager(String browser) {
         path = System.getProperty("user.dir");
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver");
             webDriver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", path + "/drivers/geckodriver.exe");
