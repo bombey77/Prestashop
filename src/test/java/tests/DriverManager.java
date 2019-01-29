@@ -24,6 +24,11 @@ public class DriverManager {
 //            options.addArguments("--disable-gpu"); // applicable to windows os only
 //            options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //            options.addArguments("--no-sandbox"); // Bypass OS security model
+
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
+            options.addArguments("window-size=1024,768");
+            options.addArguments("--no-sandbox");
             options.setExperimentalOption("useAutomationExtension", false);
 
             webDriver = new ChromeDriver(options);
