@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -46,14 +47,19 @@ public class BaseTest {
         logger.info("Web Page closed");
     }
 
-    public void screenshot(String testName) {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-        String date = dateFormat.format(new Date());
-        File fileScrenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
-        try{
-            FileUtils.copyFile(fileScrenshot, new File(testName + "_" + date + ".jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//    public void screenshot(String testName) {
+//        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+//        String date = dateFormat.format(new Date());
+//        File fileScrenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
+//        try{
+//            FileUtils.copyFile(fileScrenshot, new File(testName + "_" + date + ".jpg"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    @Attachment(type = "image/png")
+    public byte[] makeScreenshot() {
+        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
     }
 }

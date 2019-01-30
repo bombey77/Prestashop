@@ -15,7 +15,7 @@ public class DriverManager {
     public static WebDriver getDriverManager(String browser) {
         path = System.getProperty("user.dir");
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");

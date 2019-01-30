@@ -18,7 +18,8 @@ public class CustomListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        screenshot(iTestResult.getMethod().getMethodName());
+//        screenshot(iTestResult.getMethod().getMethodName());
+        makeScreenshot();
     }
 
     @Override

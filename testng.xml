@@ -4,9 +4,9 @@
     <!--<test name="Allure test">-->
         <!--<classes>-->
 
-            <!--<class name="tests.MainPageTest">-->
+            <!--<class name="tests.SearchPageTest">-->
                 <!--<methods>-->
-                    <!--<include name="checkForUAHCurrencySign"></include>-->
+                    <!--<include name="checkSearchByCatalog"></include>-->
                 <!--</methods>-->
             <!--</class>-->
         <!--</classes>-->
