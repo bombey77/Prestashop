@@ -2,135 +2,266 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-01-30T14:04:09</date>
-  <millis>1548849849592</millis>
+  <date>2019-01-30T14:15:55</date>
+  <millis>1548850555872</millis>
   <sequence>1</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.BaseTest</class>
   <method>setUp</method>
-  <thread>1</thread>
+  <thread>12</thread>
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-01-30T14:04:09</date>
-  <millis>1548849849856</millis>
+  <date>2019-01-30T14:15:56</date>
+  <millis>1548850556161</millis>
   <sequence>2</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>checkForUAHCurrencySign TEST --- STARTED ---</message>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850060</millis>
+  <date>2019-01-30T14:15:56</date>
+  <millis>1548850556161</millis>
   <sequence>3</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 0 has sign = ₴</message>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850253</millis>
+  <date>2019-01-30T14:15:56</date>
+  <millis>1548850556277</millis>
   <sequence>4</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 1 has sign = ₴</message>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850439</millis>
+  <date>2019-01-30T14:15:58</date>
+  <millis>1548850558069</millis>
   <sequence>5</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 2 has sign = ₴</message>
+  <method>checkClickUSDCurrencyDropDownButton</method>
+  <thread>12</thread>
+  <message>checkClickUSDCurrencyDropDownButton TEST --- PASSED---</message>
 </record>
 <record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850641</millis>
+  <date>2019-01-30T14:15:58</date>
+  <millis>1548850558749</millis>
   <sequence>6</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 3 has sign = ₴</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850835</millis>
-  <sequence>7</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 4 has sign = ₴</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:10</date>
-  <millis>1548849850997</millis>
-  <sequence>8</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 5 has sign = ₴</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:11</date>
-  <millis>1548849851153</millis>
-  <sequence>9</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 6 has sign = ₴</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:11</date>
-  <millis>1548849851305</millis>
-  <sequence>10</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>Element 7 has sign = ₴</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:11</date>
-  <millis>1548849851398</millis>
-  <sequence>11</sequence>
-  <logger>Prestashop</logger>
-  <level>INFO</level>
-  <class>tests.MainPageTest</class>
-  <method>checkForUAHCurrencySign</method>
-  <thread>1</thread>
-  <message>checkForUAHCurrencySign TEST --- PASSED---</message>
-</record>
-<record>
-  <date>2019-01-30T14:04:12</date>
-  <millis>1548849852077</millis>
-  <sequence>12</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.BaseTest</class>
   <method>tearDown</method>
-  <thread>1</thread>
+  <thread>12</thread>
   <message>Web Page closed</message>
 </record>
-</log>
+<record>
+  <date>2019-01-30T14:16:04</date>
+  <millis>1548850564297</millis>
+  <sequence>8</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:04</date>
+  <millis>1548850564318</millis>
+  <sequence>9</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrencySign</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrencySign TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:04</date>
+  <millis>1548850564318</millis>
+  <sequence>10</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrencySign</method>
+  <thread>12</thread>
+  <message>Clicking at the 'Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:04</date>
+  <millis>1548850564416</millis>
+  <sequence>11</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrencySign</method>
+  <thread>12</thread>
+  <message>Clicking at the 'EUR Currency Button'</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:06</date>
+  <millis>1548850566538</millis>
+  <sequence>12</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForEURCurrencySign</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrencySign TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:07</date>
+  <millis>1548850567196</millis>
+  <sequence>13</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:11</date>
+  <millis>1548850571977</millis>
+  <sequence>15</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>setUp</method>
+  <thread>12</thread>
+  <message>Main Page opened</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:11</date>
+  <millis>1548850571995</millis>
+  <sequence>16</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrencySign TEST --- STARTED ---</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572179</millis>
+  <sequence>17</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 0 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572329</millis>
+  <sequence>18</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 1 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572476</millis>
+  <sequence>19</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 2 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572641</millis>
+  <sequence>20</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 3 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572805</millis>
+  <sequence>21</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 4 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:12</date>
+  <millis>1548850572963</millis>
+  <sequence>22</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 5 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:13</date>
+  <millis>1548850573125</millis>
+  <sequence>23</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 6 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:13</date>
+  <millis>1548850573272</millis>
+  <sequence>24</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>Element 7 has sign = ₴</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:13</date>
+  <millis>1548850573346</millis>
+  <sequence>25</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.MainPageTest</class>
+  <method>checkForUAHCurrencySign</method>
+  <thread>12</thread>
+  <message>checkForUAHCurrencySign TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-01-30T14:16:14</date>
+  <millis>1548850574005</millis>
+  <sequence>26</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.BaseTest</class>
+  <method>tearDown</method>
+  <thread>12</thread>
+  <message>Web Page closed</message>
+</record>

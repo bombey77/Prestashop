@@ -11,24 +11,23 @@ import java.util.concurrent.TimeUnit;
 public class DriverManager {
 
     private static WebDriver webDriver;
-    private static String path = System.getProperty("user.dir");
+    private String path;
 
 
-    public static String getPath() {
+    public String getPath() {
         return path;
     }
 
-    public static void setPath(String path) {
-        DriverManager.path += path;
+    public void setPath(String path) {
+        this.path = path;
     }
 
     public static WebDriver getDriverManager(String browser) {
-//        path = System.getProperty("user.dir");
-
+        DriverManager driverManager = new DriverManager();
         OsCheck.OSType os = OsCheck.getOperatingSystemType();
         if (os == OsCheck.OSType.LINUX && browser.equalsIgnoreCase("chrome")) {
-            setPath("/drivers/chromedriver");
-            System.setProperty("webdriver.chrome.driver", getPath());
+            driverManager.setPath(System.getProperty("user.dir") + "/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", driverManager.getPath());
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
             options.addArguments("--disable-gpu");
@@ -37,16 +36,16 @@ public class DriverManager {
             options.setExperimentalOption("useAutomationExtension", false);
             webDriver = new ChromeDriver(options);
         } else if (os == OsCheck.OSType.WINDOWS && browser.equalsIgnoreCase("chrome")) {
-            setPath("/drivers/chromedriver.exe");
-            System.setProperty("webdriver.chrome.driver", getPath());
+            driverManager.setPath(System.getProperty("user.dir") + "/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", driverManager.getPath());
             webDriver = new ChromeDriver();
         } else if (os == OsCheck.OSType.WINDOWS && browser.equalsIgnoreCase("firefox")) {
-            setPath("/drivers/geckodriver.exe");
-            System.setProperty("webdriver.gecko.driver", getPath());
+            driverManager.setPath(System.getProperty("user.dir") + "/drivers/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", driverManager.getPath());
             webDriver = new FirefoxDriver();
         } else if (os == OsCheck.OSType.WINDOWS && browser.equalsIgnoreCase("ie")){
-            setPath("/drivers/IEDriverServer.exe");
-            System.setProperty("webdriver.ie.driver", getPath());
+            driverManager.setPath(System.getProperty("user.dir") + "/drivers/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", driverManager.getPath());
             webDriver = new InternetExplorerDriver();
         }
         setConfiguredDriver();
@@ -57,9 +56,5 @@ public class DriverManager {
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         webDriver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
-    }
-
-    public static WebDriver getWebDriver() {
-        return webDriver;
     }
 }
