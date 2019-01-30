@@ -2,15 +2,17 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import view.CurrencyButton;
 
 import static tests.ProjectLogger.logger;
 
+@Listeners(CustomListener.class)
 public class SearchPageTest extends BaseTest {
 
     //тест падает, т.к. не все элементы поиска содержат результат поиска
-    @Ignore
+//    @Ignore
     @Test(description = "Checking search by catalog")
     public void checkSearchByCatalog() {
         logger.info("checkSearchByCatalog TEST --- STARTED ---");
@@ -94,7 +96,7 @@ public class SearchPageTest extends BaseTest {
     }
 
     //тест падает, т.к. дисконт не совпадает
-    @Ignore
+//    @Ignore
     @Test(description = "Checking the discount value")
     public void checkDiscountValueTest() {
         logger.info("checkDiscountValueTest TEST --- STARTED ---");

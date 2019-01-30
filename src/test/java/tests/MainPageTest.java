@@ -1,10 +1,12 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import view.CurrencyButton;
 import static tests.ProjectLogger.logger;
 
+@Listeners(CustomListener.class)
 public class MainPageTest extends BaseTest {
 
     @Test(description = "Checking for UAH currency sign on items")
