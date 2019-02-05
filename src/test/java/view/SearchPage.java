@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Predicate;
@@ -84,24 +85,25 @@ public class SearchPage extends BasePage {
     }
 
     public boolean findTextInSearchedElements(String text) {
-//        boolean containsText = true;
-//        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
-//        List<String> listOfTitle = new ArrayList<>();
-//
-//        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
-//            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
-//        }
-//
-//        for (int i = 0; i < listOfTitle.size(); i++) {
-//            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
-//            if (!listOfTitle.get(i).contains(text)) containsText = false;
-//        }
+        boolean containsText = true;
+        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
+        List<String> listOfTitle = new ArrayList<>();
 
-        wait(listOfTitles);
-        listOfTitles.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
+        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
+            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
+        }
 
-        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text); ;
-        return listOfTitles.stream().allMatch(predicateText);
+        for (int i = 0; i < listOfTitle.size(); i++) {
+            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
+            if (!listOfTitle.get(i).contains(text)) containsText = false;
+        }
+
+//        wait(listOfTitles);
+//        listOfTitles.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
+//
+//        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
+//        return listOfTitles.stream().allMatch(predicateText);
+        return containsText;
     }
 
     public boolean sortingGoodsByPrice() {

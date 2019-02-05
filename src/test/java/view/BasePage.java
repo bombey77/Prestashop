@@ -15,8 +15,11 @@ public class BasePage extends BaseTest {
     }
 
     public void wait(List<WebElement> listWebElement) {
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfAllElements(listWebElement));
         new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfAllElements(listWebElement));
+                .until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(
+                        listWebElement)));
     }
 
     public void click(WebElement webElement) {
