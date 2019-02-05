@@ -14,15 +14,15 @@ public class SearchPageTest extends BaseTest {
     //тест падает, т.к. не все элементы поиска содержат результат поиска
 //    @Ignore
     @Test(description = "Checking search by catalog")
-    public void checkSearchByCatalog() {
-        logger.info("checkSearchByCatalog TEST --- STARTED ---");
-        System.out.println("checkSearchByCatalog TEST --- STARTED---");
+    public void checkTitleTextInSearchedElements() {
+        logger.info("checkTitleTextInSearchedElements TEST --- STARTED ---");
+        System.out.println("checkTitleTextInSearchedElements TEST --- STARTED---");
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
         Assert.assertTrue(searchPage.findTextInSearchedElements(SEARCH_TEXT));
         logger.info("Checking search by catalog --- PASSED ---");
-        System.out.println("checkSearchByCatalog TEST --- PASSED---");
+        System.out.println("checkTitleTextInSearchedElements TEST --- PASSED---");
     }
 
     @Test(description = "Checking the goods buy count of elements")

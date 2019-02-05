@@ -11,8 +11,9 @@ import tests.BaseTest;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.function.Predicate;
 
-public class SearchPage extends BaseTest {
+public class SearchPage extends BasePage {
 
     private static final String WHITE_SPACE = " ";
     private static final String COMMA = ",";
@@ -23,7 +24,7 @@ public class SearchPage extends BaseTest {
     private WebElement searchField;
 
     @FindBy(xpath = "//*[@type='submit']/i")
-    private WebElement serchButton;
+    private WebElement searchButton;
 
     @FindBy(xpath = "//*[@class='products row']/*")
     private List<WebElement> listOfSearchedElements;
@@ -37,6 +38,9 @@ public class SearchPage extends BaseTest {
     @FindBy(xpath = "//*[@id='js-product-list-top']//a[5]")
     private WebElement sortingGoodsFromMaxToMinPriceListItem;
 
+    @FindBy(xpath = "//*[@id='js-product-list']//h1/a")
+    private List<WebElement> listOfTitles;
+
     private Map<Double,Price> discountProducts;
 
     private Map<Double,Double> discounts;
@@ -47,47 +51,57 @@ public class SearchPage extends BaseTest {
     }
 
     public void searchByCatalog(String text) {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector(".ui-autocomplete-input")));
-        searchField.clear();
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.cssSelector(".ui-autocomplete-input")));
+//        searchField.clear();
+//        searchField.sendKeys(text.toLowerCase());
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[@type='submit']/i")));
+//        searchButton.click();
+        clear(searchField);
         searchField.sendKeys(text.toLowerCase());
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@type='submit']/i")));
-        serchButton.click();
+        click(searchButton);
     }
 
     public List<WebElement> getListOfSearchedElements() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@class='products row']/*")));
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[@class='products row']/*")));
+        wait(listOfSearchedElements);
         return listOfSearchedElements;
     }
 
     public int getCountOfSearchedElements() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@id='js-product-list-top']//p")));
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[@id='js-product-list-top']//p")));
+        wait(countOfSearchedElements);
         String[] countOfElementsText = countOfSearchedElements.getText().split(" ");
-        int element = Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
-        return element;
+//        int element = Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
+        return Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
     }
 
     public boolean findTextInSearchedElements(String text) {
-        boolean containsText = true;
-        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
-        List<String> listOfTitle = new ArrayList<>();
+//        boolean containsText = true;
+//        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
+//        List<String> listOfTitle = new ArrayList<>();
+//
+//        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
+//            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
+//        }
+//
+//        for (int i = 0; i < listOfTitle.size(); i++) {
+//            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
+//            if (!listOfTitle.get(i).contains(text)) containsText = false;
+//        }
 
-        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
-            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
-        }
+        wait(listOfTitles);
+        listOfTitles.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
 
-        for (int i = 0; i < listOfTitle.size(); i++) {
-            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
-            if (!listOfTitle.get(i).contains(text)) containsText = false;
-        }
-        return containsText;
+        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text); ;
+        return listOfTitles.stream().allMatch(predicateText);
     }
 
     public boolean sortingGoodsByPrice() {
@@ -141,17 +155,19 @@ public class SearchPage extends BaseTest {
     }
 
     public void clickSortingDropDownList() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector(".select-title")));
-        sortingDropDownList.click();
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.cssSelector(".select-title")));
+//        sortingDropDownList.click();
+        click(sortingDropDownList);
     }
 
     public void clickSortingDropDownListItemMaxToMin() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@id='js-product-list-top']//a[5]")));
-        sortingGoodsFromMaxToMinPriceListItem.click();
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.xpath("//*[@id='js-product-list-top']//a[5]")));
+//        sortingGoodsFromMaxToMinPriceListItem.click();
+        click(sortingGoodsFromMaxToMinPriceListItem);
     }
 
     public static class Price {
@@ -177,9 +193,10 @@ public class SearchPage extends BaseTest {
 
         discountProducts = new HashMap<>();
 
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(
-                        By.xpath("//*[@class='products row']/*"))));
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(
+//                        By.xpath("//*[@class='products row']/*"))));
+        wait(listOfSearchedElements);
 
         try {
             Thread.sleep(3000);

@@ -1,16 +1,13 @@
 package view;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import tests.BaseTest;
+
 import java.util.List;
 
-public class MainPage extends BaseTest {
+public class MainPage extends BasePage {
 
     @FindBy(xpath = "//*[@class='expand-more _gray-darker hidden-sm-down']")
     private WebElement currencySignButton;
@@ -33,60 +30,63 @@ public class MainPage extends BaseTest {
     }
 
     public void clickCurrencyButton() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
-        currencySignButton.click();
+        click(currencySignButton);
     }
 
     public void clickCurrencyDropDownButton(CurrencyButton button) {
-        switch(button) {
-            case EUR:
-                new WebDriverWait(webDriver, 30)
-                        .until(ExpectedConditions.visibilityOfElementLocated(
-                                By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
-                eurCurrencySignButton.click();
-                break;
-            case USD:
-                new WebDriverWait(webDriver, 30)
-                        .until(ExpectedConditions.visibilityOfElementLocated(
-                                By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
-                usdCurrencySignButton.click();
-                break;
-            case UAH:
-                new WebDriverWait(webDriver, 30)
-                        .until(ExpectedConditions.visibilityOfElementLocated(
-                                By.xpath("//*[contains(@class,'dropdown-item') and text()='UAH ₴']")));
-                uahCurrencySignButton.click();
-                break;
-            default:
-                System.out.println("Currency button wasn't chosen");
-                break;
-        }
+        click(setCurrencyDropDownButton(button));
     }
+
+    public WebElement setCurrencyDropDownButton(CurrencyButton button) {
+        if (button == CurrencyButton.EUR) {
+            return eurCurrencySignButton;
+        } else if (button == CurrencyButton.USD) {
+            return usdCurrencySignButton;
+        } else return uahCurrencySignButton;
+    }
+
+//    public void clickCurrencyDropDownButton(CurrencyButton button) {
+//        switch(button) {
+//            case EUR:
+//                new WebDriverWait(webDriver, 30)
+//                        .until(ExpectedConditions.visibilityOfElementLocated(
+//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
+//                eurCurrencySignButton.click();
+//                break;
+//            case USD:
+//                new WebDriverWait(webDriver, 30)
+//                        .until(ExpectedConditions.visibilityOfElementLocated(
+//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
+//                usdCurrencySignButton.click();
+//                break;
+//            case UAH:
+//                new WebDriverWait(webDriver, 30)
+//                        .until(ExpectedConditions.visibilityOfElementLocated(
+//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='UAH ₴']")));
+//                uahCurrencySignButton.click();
+//                break;
+//            default:
+//                System.out.println("Currency button wasn't chosen");
+//                break;
+//        }
+//    }
 
     public String getCurrencySign() {
         int one = 1;
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
-        String textCurrencySignButton = currencySignButton.getText();
-        char[] arrayCurrencySignButton = textCurrencySignButton.toCharArray();
-        String currencySign = String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
-        return currencySign;
+        wait(currencySignButton);
+//        String textCurrencySignButton = currencySignButton.getText();
+        char[] arrayCurrencySignButton = currencySignButton.getText().toCharArray();
+//        String currencySign = String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
+        return String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
     }
 
     public List<WebElement> getListOfPopularGoods() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@class='products']/article")));
+        wait(listOfPopularGoods);
         return listOfPopularGoods;
     }
 
     public WebElement getCurrencySignButton() {
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//*[@class='expand-more _gray-darker hidden-sm-down']")));
+        wait(currencySignButton);
         return currencySignButton;
     }
 }

@@ -18,6 +18,7 @@ public class MainPageTest extends BaseTest {
             logger.info("Element " + i + " has sign = " + mainPage.getCurrencySign());
             System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
             Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
+//            Assert.assertEquals(mainPage.getCurrencySign(), "₴");
         }
         logger.info("checkForUAHCurrencySign TEST --- PASSED---");
         System.out.println("checkForUAHCurrencySign TEST --- PASSED---");
