@@ -12,6 +12,7 @@ import tests.BaseTest;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class SearchPage extends BasePage {
@@ -39,8 +40,8 @@ public class SearchPage extends BasePage {
     @FindBy(xpath = "//*[@id='js-product-list-top']//a[5]")
     private WebElement sortingGoodsFromMaxToMinPriceListItem;
 
-    @FindBy(xpath = "//*[@id='js-product-list']//h1/a")
-    private List<WebElement> listOfTitles;
+    @FindBy(xpath = "//*[@id='js-product-list']//div[1]/div/span[1]")
+    private List<WebElement> listOfPrices;
 
     private Map<Double,Price> discountProducts;
 
@@ -85,64 +86,82 @@ public class SearchPage extends BasePage {
     }
 
     public boolean findTextInSearchedElements(String text) {
-        boolean containsText = true;
-        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
-        List<String> listOfTitle = new ArrayList<>();
-
-        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
-            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
-        }
-
-        for (int i = 0; i < listOfTitle.size(); i++) {
-            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
-            if (!listOfTitle.get(i).contains(text)) containsText = false;
-        }
-
-//        wait(listOfTitles);
-//        listOfTitles.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
+//        boolean containsText = true;
+//        List<WebElement> listOfSearchedElements = getListOfSearchedElements();
+//        List<String> listOfTitle = new ArrayList<>();
 //
-//        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
-//        return listOfTitles.stream().allMatch(predicateText);
-        return containsText;
+//        for (int i = 0; i < getListOfSearchedElements().size(); i++) {
+//            listOfTitle.add((listOfSearchedElements.get(i).getText()).toLowerCase());
+//        }
+//
+//        for (int i = 0; i < listOfTitle.size(); i++) {
+//            System.out.println(i + " element found " + text + " = " + listOfTitle.get(i).contains(text));
+//            if (!listOfTitle.get(i).contains(text)) containsText = false;
+//        }
+
+        wait(listOfSearchedElements);
+        listOfSearchedElements.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
+
+        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
+        return listOfSearchedElements.stream().allMatch(predicateText);
+//        return containsText;
+    }
+
+    public List<String> findCurrencySignInSearchedElement(String text) {
+        wait(listOfPrices);
+        List<String> list = new LinkedList<>();
+        listOfPrices.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
+        listOfPrices.forEach(t -> list.add(t.getText().toLowerCase().substring(t.getText().length()-1)));
+        return list;
     }
 
     public boolean sortingGoodsByPrice() {
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
-        new WebDriverWait(webDriver, 30)
-                .until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(
-                        By.xpath("//*[@class='products row']/*"))));
-        List<WebElement> webElementList = webDriver.findElements(By.xpath("//*[@class='products row']/*"));
+//        new WebDriverWait(webDriver, 30)
+//                .until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(
+//                        By.xpath("//*[@class='products row']/*"))));
+//        List<WebElement> webElementList = webDriver.findElements(By.xpath("//*[@class='products row']/*"));
 
-        String regularPriceClass = "regular-price";
-        String priceClass = "price";
+        wait(listOfPrices);
+//        String regularPriceClass = "regular-price";
+//        String priceClass = "price";
         List<Double> unSortedPriceList = new LinkedList<>();
-        List<Double> sortedPriceList = new LinkedList<>();
+//        List<Double> sortedPriceList = new LinkedList<>();
 
-        for (int i = 0; i < webElementList.size(); i++) {
-            try{
-                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-                        By.className(regularPriceClass)));
-                WebElement regularPrice = webElementList.get(i).findElement(By.className(regularPriceClass));
-                if (!regularPrice.equals(null)) {
-                    unSortedPriceList.add(divider(regularPrice.getText()));
-                    sortedPriceList.add(divider(regularPrice.getText()));
-                }
-            } catch (Exception e) {
-                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-                        By.className(priceClass)));
-                WebElement price = webElementList.get(i).findElement(By.className(priceClass));
-                unSortedPriceList.add(divider(price.getText()));
-                sortedPriceList.add(divider(price.getText()));
-            }
-        }
-        Collections.sort(sortedPriceList);
-        Collections.reverse(sortedPriceList);
+        //--------------------------  //*[@id="js-product-list"]//div[1]/div/span[1]
+        listOfPrices.forEach(w -> unSortedPriceList.add(Double.valueOf(w.getText()
+                .substring(0, w.getText().length()-2).replace(",","."))));
+
+        List<Double> sortedPriceList = new LinkedList<>(unSortedPriceList);
+        //--------------------------
+
+//        for (int i = 0; i < webElementList.size(); i++) {
+//            try{
+//                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.className(regularPriceClass)));
+//                WebElement regularPrice = webElementList.get(i).findElement(By.className(regularPriceClass));
+//                if (!regularPrice.equals(null)) {
+//                    unSortedPriceList.add(divider(regularPrice.getText()));
+//                    sortedPriceList.add(divider(regularPrice.getText()));
+//                }
+//            } catch (Exception e) {
+//                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
+//                        By.className(priceClass)));
+//                WebElement price = webElementList.get(i).findElement(By.className(priceClass));
+//                unSortedPriceList.add(divider(price.getText()));
+//                sortedPriceList.add(divider(price.getText()));
+//            }
+//        }
+
+//        Collections.sort(sortedPriceList);
+//        Collections.reverse(sortedPriceList);
+        sortedPriceList.stream().sorted(Collections.reverseOrder());
         return unSortedPriceList.equals(sortedPriceList);
     }
 
@@ -152,9 +171,9 @@ public class SearchPage extends BasePage {
 
     }
 
-    public boolean currencyOfItemInSearchList(String text) {
-        return findTextInSearchedElements(text);
-    }
+//    public boolean currencyOfItemInSearchList(String text) {
+//        return findTextInSearchedElements(text);
+//    }
 
     public void clickSortingDropDownList() {
 //        new WebDriverWait(webDriver, 30)
@@ -212,6 +231,19 @@ public class SearchPage extends BasePage {
         String priceClass = "price";
         String discountClass = "discount-percentage";
 
+//        System.out.println("=================================");
+//        webElementList.forEach(w -> {
+//            try {
+//                System.out.println(
+//                        "Regular price = " + w.findElement(By.className(regularPriceClass)).getText() +
+//                                ", discount price = " + w.findElement(By.className(priceClass)).getText() +
+//                                ", discount = " + w.findElement(By.className(discountClass)).getText());
+//            } catch (ArithmeticException e) {
+//                System.out.println("--- Found product without discount ---");
+//            }
+//        });
+//        System.out.println("=================================");
+
         for (int i = 0; i < webElementList.size(); i++) {
             try{
                 new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
@@ -253,12 +285,14 @@ public class SearchPage extends BasePage {
 
             BigDecimal percentage = ((price.subtract(regularPrice))).multiply(new BigDecimal(100));
 
-            Formatter formatter = new Formatter();
-            formatter.format("%.2f", percentage.negate());
-            String stringPercentage = formatter.toString();
+//            Formatter formatter = new Formatter();
+//            formatter.format("%.2f", percentage.negate());
+//            String stringPercentage = formatter.toString();
 
-            String result = stringPercentage.substring(0, stringPercentage.length()-3);
-            double actualDiscount = Double.valueOf(result);
+            String stPercentage = String.format("%.2f", percentage.negate());
+
+//            String result = stPercentage.substring(0, stPercentage.length()-3);
+            double actualDiscount = Double.valueOf(stPercentage.substring(0, stPercentage.length()-3));
 
             discounts.put(actualDiscount, discount);
 
