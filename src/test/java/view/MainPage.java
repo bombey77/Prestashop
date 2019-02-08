@@ -45,38 +45,10 @@ public class MainPage extends BasePage {
         } else return uahCurrencySignButton;
     }
 
-//    public void clickCurrencyDropDownButton(CurrencyButton button) {
-//        switch(button) {
-//            case EUR:
-//                new WebDriverWait(webDriver, 30)
-//                        .until(ExpectedConditions.visibilityOfElementLocated(
-//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='EUR €']")));
-//                eurCurrencySignButton.click();
-//                break;
-//            case USD:
-//                new WebDriverWait(webDriver, 30)
-//                        .until(ExpectedConditions.visibilityOfElementLocated(
-//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='USD $']")));
-//                usdCurrencySignButton.click();
-//                break;
-//            case UAH:
-//                new WebDriverWait(webDriver, 30)
-//                        .until(ExpectedConditions.visibilityOfElementLocated(
-//                                By.xpath("//*[contains(@class,'dropdown-item') and text()='UAH ₴']")));
-//                uahCurrencySignButton.click();
-//                break;
-//            default:
-//                System.out.println("Currency button wasn't chosen");
-//                break;
-//        }
-//    }
-
     public String getCurrencySign() {
         int one = 1;
         wait(currencySignButton);
-//        String textCurrencySignButton = currencySignButton.getText();
         char[] arrayCurrencySignButton = currencySignButton.getText().toCharArray();
-//        String currencySign = String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
         return String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
     }
 

@@ -8,7 +8,7 @@ public class OsCheck {
 
     public enum OSType {
         WINDOWS, MAC_OS, LINUX, OTHER
-    };
+    }
 
     public static OSType getOperatingSystemType() {
         if (detectedOS == null) {

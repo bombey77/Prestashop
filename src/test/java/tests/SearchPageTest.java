@@ -1,12 +1,9 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import view.CurrencyButton;
-
-import java.util.List;
 
 import static tests.ProjectLogger.logger;
 
