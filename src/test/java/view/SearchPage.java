@@ -89,11 +89,8 @@ public class SearchPage extends BasePage {
             boolean validValue = textInElement.getText().toLowerCase().contains(text);
             System.out.println("Element found " + text + " = "
                     + textInElement.getText().toLowerCase().contains(text));
-            if (validValue) {
-                list.add(text);
-            } else {
-                list.add(null);
-            }
+            if (validValue) list.add(text);
+             else list.add(null);
         });
         return list;
     }
@@ -115,19 +112,17 @@ public class SearchPage extends BasePage {
     public void sortingGoodsByPrice() {
         wait(listOfPrices);
         unSortedPriceList = new LinkedList<>();
-        listOfPrices.forEach(w -> unSortedPriceList.add(Double.valueOf(w.getText()
-                .substring(0, w.getText().length()-2).replace(COMMA,POINT))));
-
+        listOfPrices.forEach(element -> unSortedPriceList.add(Double.valueOf(element.getText()
+                .substring(0, element.getText().length()-2).replace(COMMA,POINT))));
         sortedPriceList = new LinkedList<>(unSortedPriceList);
-
         sortedPriceList.stream().sorted(Collections.reverseOrder());
     }
 
-    private static double divider(String text) {
-        String[] lines = text.split(WHITE_SPACE);
-        return Double.valueOf(lines[0].replace(COMMA, POINT));
-
-    }
+//    private static double divider(String text) {
+//        String[] lines = text.split(WHITE_SPACE);
+//        return Double.valueOf(lines[0].replace(COMMA, POINT));
+//
+//    }
 
     public void clickSortingDropDownList() {
         click(sortingDropDownList);
@@ -137,27 +132,7 @@ public class SearchPage extends BasePage {
         click(sortingGoodsFromMaxToMinPriceListItem);
     }
 
-    public static class Price {
-
-        private double regularPrice;
-        private double price;
-
-        private Price(double regularPrice, double price) {
-            this.regularPrice = regularPrice;
-            this.price = price;
-        }
-
-        public double getRegularPrice() {
-            return regularPrice;
-        }
-
-        public double getPrice() {
-            return price;
-        }
-    }
-
     public void findGoodsWithDiscount() {
-
         discountProducts = new HashMap<>();
         wait(listOfSearchedElements);
 
@@ -167,49 +142,58 @@ public class SearchPage extends BasePage {
             e.printStackTrace();
         }
 
-        List<WebElement> webElementList = webDriver.findElements(By.xpath("//*[@class='products row']/*"));
-
         String regularPriceClass = "regular-price";
         String priceClass = "price";
         String discountClass = "discount-percentage";
 
-//        System.out.println("=================================");
-//        webElementList.forEach(w -> {
-//            try {
-//                System.out.println(
-//                        "Regular price = " + w.findElement(By.className(regularPriceClass)).getText() +
-//                                ", discount price = " + w.findElement(By.className(priceClass)).getText() +
-//                                ", discount = " + w.findElement(By.className(discountClass)).getText());
-//            } catch (ArithmeticException e) {
-//                System.out.println("--- Found product without discount ---");
-//            }
-//        });
-//        System.out.println("=================================");
-
-        for (int i = 0; i < webElementList.size(); i++) {
-            try{
-                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-                        By.className(regularPriceClass)));
-                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-                        By.className(priceClass)));
-                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-                        By.className(discountClass)));
-
-                WebElement regularPrice = webElementList.get(i).findElement(By.className(regularPriceClass));
-                WebElement price = webElementList.get(i).findElement(By.className(priceClass));
-                WebElement discount = webElementList.get(i).findElement(By.className(discountClass));
-
-                System.out.println("Regular price = " + divider(regularPrice.getText()) + ", discount price = " + divider(price.getText())
-                + ", discount = " + discount.getText());
-
-                String result = discount.getText().substring(1, discount.getText().length()-1);
-                double actualDiscount = Double.valueOf(result);
-
-                discountProducts.put(actualDiscount,new Price(divider(regularPrice.getText()),divider(price.getText())));
+        listOfSearchedElements.forEach(element -> {
+            try {
+                wait(regularPriceClass,priceClass,discountClass);
+                System.out.println(
+                    "Regular price = " + element.findElement(By.className(regularPriceClass)).getText()
+                            .replace(COMMA,POINT).split(WHITE_SPACE)[0] +
+                            ", discount price = " + element.findElement(By.className(priceClass)).getText()
+                            .replace(COMMA,POINT).split(WHITE_SPACE)[0] +
+                            ", discount = " + element.findElement(By.className(discountClass)).getText()
+                            .substring(1,element.findElement(By.className(discountClass)).getText().length()-1));
+                discountProducts.put(Double.valueOf(element.findElement(By.className(discountClass)).getText()
+                                .substring(1,element.findElement(By.className(discountClass)).getText().length()-1)),
+                        new Price(Double.valueOf(element.findElement(By.className(regularPriceClass)).getText()
+                                .replace(COMMA,POINT).split(WHITE_SPACE)[0]),
+                                Double.valueOf(element.findElement(By.className(priceClass)).getText()
+                                        .replace(COMMA,POINT).split(WHITE_SPACE)[0])));
             } catch (Exception e) {
-                System.out.println("Found product without discount");
+                System.out.println("Found product without the discount");
             }
-        }
+        });
+
+//        for (int i = 0; i < webElementList.size(); i++) {
+//            try{
+//                wait(regularPriceClass);
+//                wait(priceClass);
+//                wait(discountClass);
+////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
+////                        By.className(regularPriceClass)));
+////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
+////                        By.className(priceClass)));
+////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
+////                        By.className(discountClass)));
+//
+//                WebElement regularPrice = webElementList.get(i).findElement(By.className(regularPriceClass));
+//                WebElement price = webElementList.get(i).findElement(By.className(priceClass));
+//                WebElement discount = webElementList.get(i).findElement(By.className(discountClass));
+//
+//                System.out.println("Regular price = " + divider(regularPrice.getText()) + ", discount price = " + divider(price.getText())
+//                + ", discount = " + discount.getText());
+//
+//                String result = discount.getText().substring(1, discount.getText().length()-1);
+//                double actualDiscount = Double.valueOf(result);
+//
+//                discountProducts.put(actualDiscount,new Price(divider(regularPrice.getText()),divider(price.getText())));
+//            } catch (Exception e) {
+//                System.out.println("Found product without discount");
+//            }
+//        }
     }
 
     public Map<Double,Price> getDiscountProducts() {
@@ -253,5 +237,24 @@ public class SearchPage extends BasePage {
 
     public List<Double> getSortedPriceList() {
         return sortedPriceList;
+    }
+
+    public static class Price {
+
+        private double regularPrice;
+        private double price;
+
+        private Price(double regularPrice, double price) {
+            this.regularPrice = regularPrice;
+            this.price = price;
+        }
+
+        public double getRegularPrice() {
+            return regularPrice;
+        }
+
+        public double getPrice() {
+            return price;
+        }
     }
 }
