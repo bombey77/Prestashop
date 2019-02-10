@@ -5,6 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class BasePage extends BaseTest {
@@ -28,5 +29,15 @@ public class BasePage extends BaseTest {
     public void clear(WebElement webElement) {
         wait(webElement);
         webElement.clear();
+    }
+
+    public List<String> findCurrencySignInSearchedElement(String text, List<WebElement> listOfPrices) {
+        wait(listOfPrices);
+        List<String> list = new LinkedList<>();
+
+        listOfPrices.forEach(t -> {
+            System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text));
+            list.add(t.getText().toLowerCase().substring(t.getText().length()-1));});
+        return list;
     }
 }

@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Optional;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class MainPage extends BasePage {
@@ -24,16 +26,19 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//*[@class='products']/article")
     private List<WebElement> listOfPopularGoods;
 
+    @FindBy(xpath = "//*[@id='content']//div[1]/div/span[1]")
+    private List<WebElement> listOfPrices;
+
     public MainPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
 
-    public void clickCurrencyButton() {
+    public void clickCurrencyDropDownButton() {
         click(currencySignButton);
     }
 
-    public void clickCurrencyDropDownButton(CurrencyButton button) {
+    public void clickCurrencyButton(CurrencyButton button) {
         click(setCurrencyDropDownButton(button));
     }
 
@@ -60,5 +65,20 @@ public class MainPage extends BasePage {
     public WebElement getCurrencySignButton() {
         wait(currencySignButton);
         return currencySignButton;
+    }
+
+//    public List<String> findCurrencySignInSearchedElement(String text) {
+//        wait(listOfPrices);
+//        List<String> list = new LinkedList<>();
+//
+//        listOfPrices.forEach(t -> {
+//            System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text));
+//            list.add(t.getText().toLowerCase().substring(t.getText().length()-1));});
+//        return list;
+//    }
+
+    public List<WebElement> getListOfPrices() {
+        wait(listOfPrices);
+        return listOfPrices;
     }
 }

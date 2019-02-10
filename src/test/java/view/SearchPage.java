@@ -46,6 +46,10 @@ public class SearchPage extends BasePage {
 
     private Map<Double,Double> discounts;
 
+    private List<Double> unSortedPriceList;
+
+    private List<Double> sortedPriceList;
+
     public SearchPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
@@ -64,37 +68,59 @@ public class SearchPage extends BasePage {
 
     public int getCountOfSearchedElements() {
         wait(countOfSearchedElements);
-        String[] countOfElementsText = countOfSearchedElements.getText().split(" ");
+        String[] countOfElementsText = countOfSearchedElements.getText().split(WHITE_SPACE);
         return Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
     }
 
-    public boolean findTextInSearchedElements(String text) {
+//    public boolean findTextInSearchedElements(String text) {
+//
+//        wait(listOfSearchedElements);
+//        listOfSearchedElements.forEach(t -> System.out.println("Element found " + text + " = "
+//                + t.getText().toLowerCase().contains(text)));
+//
+//        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
+//        return listOfSearchedElements.stream().allMatch(predicateText);
+//    }
 
-        wait(listOfSearchedElements);
-        listOfSearchedElements.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
-
-        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
-        return listOfSearchedElements.stream().allMatch(predicateText);
-    }
-
-    public List<String> findCurrencySignInSearchedElement(String text) {
-        wait(listOfPrices);
+    public List<String> findTextInSearchedElements(String text) {
         List<String> list = new LinkedList<>();
-        listOfPrices.forEach(t -> System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text)));
-        listOfPrices.forEach(t -> list.add(t.getText().toLowerCase().substring(t.getText().length()-1)));
+        wait(listOfSearchedElements);
+        listOfSearchedElements.forEach(textInElement -> {
+            boolean validValue = textInElement.getText().toLowerCase().contains(text);
+            System.out.println("Element found " + text + " = "
+                    + textInElement.getText().toLowerCase().contains(text));
+            if (validValue) {
+                list.add(text);
+            } else {
+                list.add(null);
+            }
+        });
         return list;
     }
 
-    public boolean sortingGoodsByPrice() {
-        wait(listOfPrices);
-        List<Double> unSortedPriceList = new LinkedList<>();
-        listOfPrices.forEach(w -> unSortedPriceList.add(Double.valueOf(w.getText()
-                .substring(0, w.getText().length()-2).replace(",","."))));
 
-        List<Double> sortedPriceList = new LinkedList<>(unSortedPriceList);
+//    public List<String> findCurrencySignInSearchedElement(String text) {
+//        wait(listOfPrices);
+//        List<String> list = new LinkedList<>();
+////        listOfPrices.forEach(t -> System.out.println("Element found " + text + " = "
+////                + t.getText().toLowerCase().contains(text)));
+////        listOfPrices.forEach(t -> list.add(t.getText().toLowerCase().substring(t.getText().length()-1)));
+//
+//        listOfPrices.forEach(t -> {
+//            System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text));
+//            list.add(t.getText().toLowerCase().substring(t.getText().length()-1));});
+//        return list;
+//    }
+
+    public void sortingGoodsByPrice() {
+        wait(listOfPrices);
+        unSortedPriceList = new LinkedList<>();
+        listOfPrices.forEach(w -> unSortedPriceList.add(Double.valueOf(w.getText()
+                .substring(0, w.getText().length()-2).replace(COMMA,POINT))));
+
+        sortedPriceList = new LinkedList<>(unSortedPriceList);
 
         sortedPriceList.stream().sorted(Collections.reverseOrder());
-        return unSortedPriceList.equals(sortedPriceList);
     }
 
     private static double divider(String text) {
@@ -214,5 +240,18 @@ public class SearchPage extends BasePage {
 
     public Map<Double, Double> getDiscounts() {
         return discounts;
+    }
+
+    public List<WebElement> getListOfPrices() {
+        wait(listOfPrices);
+        return listOfPrices;
+    }
+
+    public List<Double> getUnSortedPriceList() {
+        return unSortedPriceList;
+    }
+
+    public List<Double> getSortedPriceList() {
+        return sortedPriceList;
     }
 }

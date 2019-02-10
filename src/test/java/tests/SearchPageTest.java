@@ -13,27 +13,30 @@ public class SearchPageTest extends BaseTest {
     //тест падает, т.к. не все элементы поиска содержат результат поиска
 //    @Ignore
     @Test(description = "Checking search by catalog")
-    public void checkTitleTextInSearchedElements() {
-        logger.info("checkTitleTextInSearchedElements TEST --- STARTED ---");
-        System.out.println("checkTitleTextInSearchedElements TEST --- STARTED---");
+    public void checkTitleTextInSearchedElement() {
+        logger.info("checkTitleTextInSearchedElement TEST --- STARTED ---");
+        System.out.println("checkTitleTextInSearchedElement TEST --- STARTED---");
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-        Assert.assertTrue(searchPage.findTextInSearchedElements(SEARCH_TEXT));
+//        Assert.assertTrue(searchPage.findTextInSearchedElements(SEARCH_TEXT));
+//        searchPage.findTextInSearchedElements(SEARCH_TEXT);
+        searchPage.findTextInSearchedElements(SEARCH_TEXT).forEach(text ->
+            Assert.assertEquals(text, SEARCH_TEXT));
         logger.info("Checking search by catalog --- PASSED ---");
-        System.out.println("checkTitleTextInSearchedElements TEST --- PASSED---");
+        System.out.println("checkTitleTextInSearchedElement TEST --- PASSED---");
     }
 
-    @Test(description = "Checking the goods buy count of elements")
-    public void checkSearchGoodsByCountOfElements() {
-        logger.info("checkSearchGoodsByCountOfElements TEST --- STARTED ---");
-        System.out.println("checkSearchGoodsByCountOfElements TEST --- STARTED---");
+    @Test(description = "Checking the goods by count of elements")
+    public void checkNumberOfGoodsAreEqualFoundedGoods() {
+        logger.info("checkNumberOfGoodsAreEqualFoundedGoods TEST --- STARTED ---");
+        System.out.println("checkNumberOfGoodsAreEqualFoundedGoods TEST --- STARTED---");
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
         Assert.assertEquals(searchPage.getListOfSearchedElements().size(), searchPage.getCountOfSearchedElements());
-        logger.info("checkSearchGoodsByCountOfElements TEST --- PASSED---");
-        System.out.println("checkSearchGoodsByCountOfElements TEST --- PASSED---");
+        logger.info("checkNumberOfGoodsAreEqualFoundedGoods TEST --- PASSED---");
+        System.out.println("checkNumberOfGoodsAreEqualFoundedGoods TEST --- PASSED---");
     }
 
     @Test(description = "Checking the USD currency sign in searched elements")
@@ -42,26 +45,26 @@ public class SearchPageTest extends BaseTest {
         logger.info("checkCurrencySignInSearchedElements TEST --- STARTED ---");
         System.out.println("checkCurrencySignInSearchedElements TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyButton();
+        mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
+        mainPage.clickCurrencyButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-        searchPage.findCurrencySignInSearchedElement(DOLLAR)
+        searchPage.findCurrencySignInSearchedElement(DOLLAR, searchPage.getListOfPrices())
                 .forEach(sign -> Assert.assertEquals(sign, DOLLAR));
         logger.info("checkCurrencySignInSearchedElements TEST --- PASSED---");
         System.out.println("checkCurrencySignInSearchedElements TEST --- PASSED---");
     }
 
     @Test(description = "Sorting the elements from MAX price to MIN price")
-    public void checkSortingByPrice() {
-        logger.info("checkSortingByPrice TEST --- STARTED ---");
-        System.out.println("checkSortingByPrice TEST --- STARTED---");
+    public void checkSortingGoodsFromMaxToMinPrice() {
+        logger.info("checkSortingGoodsFromMaxToMinPrice TEST --- STARTED ---");
+        System.out.println("checkSortingGoodsFromMaxToMinPrice TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyButton();
+        mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
+        mainPage.clickCurrencyButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
@@ -69,9 +72,10 @@ public class SearchPageTest extends BaseTest {
         searchPage.clickSortingDropDownList();
         logger.info("Clicking at the 'List Item Sorting From Max To Min price'");
         searchPage.clickSortingDropDownListItemMaxToMin();
-        Assert.assertTrue(searchPage.sortingGoodsByPrice());
-        logger.info("checkSortingByPrice TEST --- PASSED---");
-        System.out.println("checkSortingByPrice TEST --- PASSED---");
+        searchPage.sortingGoodsByPrice();
+        Assert.assertEquals(searchPage.getUnSortedPriceList(), searchPage.getSortedPriceList());
+        logger.info("checkSortingGoodsFromMaxToMinPrice TEST --- PASSED---");
+        System.out.println("checkSortingGoodsFromMaxToMinPrice TEST --- PASSED---");
     }
 
     @Test(description = "Checking the regular and discount price are exist")
@@ -79,9 +83,9 @@ public class SearchPageTest extends BaseTest {
         logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- STARTED ---");
         System.out.println("checkProductRegularAndDiscountPriceAreExistTest TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyButton();
+        mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
+        mainPage.clickCurrencyButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
@@ -90,7 +94,8 @@ public class SearchPageTest extends BaseTest {
         logger.info("Clicking at the 'List Item Sorting From Max To Min price'");
         searchPage.clickSortingDropDownListItemMaxToMin();
         searchPage.findGoodsWithDiscount();
-        searchPage.getDiscountProducts().forEach((k,v) -> Assert.assertTrue((v.getRegularPrice() >= 0) && v.getPrice() >= 0));
+        searchPage.getDiscountProducts().forEach((k,v) ->
+                Assert.assertTrue((v.getRegularPrice() >= 0) && v.getPrice() >= 0));
         logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
         System.out.println("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
     }
@@ -102,9 +107,9 @@ public class SearchPageTest extends BaseTest {
         logger.info("checkDiscountValueTest TEST --- STARTED ---");
         System.out.println("checkDiscountValueTest TEST --- STARTED---");
         logger.info("Clicking at the 'Currency Button'");
-        mainPage.clickCurrencyButton();
+        mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'USD Currency Button'");
-        mainPage.clickCurrencyDropDownButton(CurrencyButton.USD);
+        mainPage.clickCurrencyButton(CurrencyButton.USD);
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
@@ -114,7 +119,7 @@ public class SearchPageTest extends BaseTest {
         searchPage.clickSortingDropDownListItemMaxToMin();
         searchPage.findGoodsWithDiscount();
         searchPage.checkDiscountValue();
-        searchPage.getDiscounts().forEach((k,v) -> Assert.assertTrue(k.equals(v)));
+        searchPage.getDiscounts().forEach((k,v) -> Assert.assertEquals(k, v));
         logger.info("checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---");
         System.out.println("checkDiscountValueTest TEST --- PASSED---");
     }
