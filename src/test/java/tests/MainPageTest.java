@@ -13,12 +13,6 @@ public class MainPageTest extends BaseTest {
     public void checkForUAHCurrencySignOnItem() {
         logger.info("checkForUAHCurrencySignOnItem TEST --- STARTED ---");
         System.out.println("checkForUAHCurrencySignOnItem TEST --- STARTED---");
-//        for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
-//            String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
-//            logger.info("Element " + i + " has sign = " + mainPage.getCurrencySign());
-//            System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
-//            Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
-//        }
         mainPage.findCurrencySignInSearchedElement(mainPage.getCurrencySign(), mainPage.getListOfPrices())
                 .forEach(sign -> Assert.assertEquals(sign, mainPage.getCurrencySign()));
         logger.info("checkForUAHCurrencySignOnItem TEST --- PASSED---");
@@ -33,12 +27,6 @@ public class MainPageTest extends BaseTest {
         mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'EUR Currency Button'");
         mainPage.clickCurrencyButton(CurrencyButton.EUR);
-
-//        for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
-//            String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
-//            System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
-//            Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
-//        }
         mainPage.findCurrencySignInSearchedElement(mainPage.getCurrencySign(), mainPage.getListOfPrices())
                 .forEach(sign -> Assert.assertEquals(sign, mainPage.getCurrencySign()));
         logger.info("checkForUAHCurrencySignOnItem TEST --- PASSED---");
@@ -53,22 +41,8 @@ public class MainPageTest extends BaseTest {
         mainPage.clickCurrencyDropDownButton();
         logger.info("Clicking at the 'USD Currency Button'");
         mainPage.clickCurrencyButton(CurrencyButton.USD);
-
-//        for (int i = 0; i < mainPage.getListOfPopularGoods().size(); i++) {
-//            String textOfElement = mainPage.getListOfPopularGoods().get(i).getText();
-//            System.out.println("Element " + i + " has sign = " + mainPage.getCurrencySign());
-//            Assert.assertTrue(textOfElement.contains(mainPage.getCurrencySign()));
-//        }
-
         mainPage.findCurrencySignInSearchedElement(mainPage.getCurrencySign(), mainPage.getListOfPrices())
                 .forEach(sign -> Assert.assertEquals(sign, mainPage.getCurrencySign()));
-        //======================================
-//        mainPage.getListOfPopularGoods().forEach((t) -> {
-//            System.out.println("Element has sign = " + mainPage.getCurrencySign());
-//            Assert.assertTrue(t.getText().contains(mainPage.getCurrencySign()));
-//        });
-        //======================================
-
         logger.info("checkForUSDCurrencySign TEST --- PASSED---");
         System.out.println("checkForUSDCurrencySign TEST --- PASSED---");
     }

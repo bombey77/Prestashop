@@ -19,8 +19,6 @@ public class SearchPageTest extends BaseTest {
         logger.info("Clicking at the 'SEARCH FIELD'");
         logger.info("Writing into the 'SEARCH FIELD' text = " + SEARCH_TEXT);
         searchPage.searchByCatalog(SEARCH_TEXT);
-//        Assert.assertTrue(searchPage.findTextInSearchedElements(SEARCH_TEXT));
-//        searchPage.findTextInSearchedElements(SEARCH_TEXT);
         searchPage.findTextInSearchedElements(SEARCH_TEXT).forEach(text ->
             Assert.assertEquals(text, SEARCH_TEXT));
         logger.info("Checking search by catalog --- PASSED ---");

@@ -72,16 +72,6 @@ public class SearchPage extends BasePage {
         return Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
     }
 
-//    public boolean findTextInSearchedElements(String text) {
-//
-//        wait(listOfSearchedElements);
-//        listOfSearchedElements.forEach(t -> System.out.println("Element found " + text + " = "
-//                + t.getText().toLowerCase().contains(text)));
-//
-//        Predicate<WebElement> predicateText = webElement -> webElement.getText().toLowerCase().contains(text);
-//        return listOfSearchedElements.stream().allMatch(predicateText);
-//    }
-
     public List<String> findTextInSearchedElements(String text) {
         List<String> list = new LinkedList<>();
         wait(listOfSearchedElements);
@@ -95,20 +85,6 @@ public class SearchPage extends BasePage {
         return list;
     }
 
-
-//    public List<String> findCurrencySignInSearchedElement(String text) {
-//        wait(listOfPrices);
-//        List<String> list = new LinkedList<>();
-////        listOfPrices.forEach(t -> System.out.println("Element found " + text + " = "
-////                + t.getText().toLowerCase().contains(text)));
-////        listOfPrices.forEach(t -> list.add(t.getText().toLowerCase().substring(t.getText().length()-1)));
-//
-//        listOfPrices.forEach(t -> {
-//            System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text));
-//            list.add(t.getText().toLowerCase().substring(t.getText().length()-1));});
-//        return list;
-//    }
-
     public void sortingGoodsByPrice() {
         wait(listOfPrices);
         unSortedPriceList = new LinkedList<>();
@@ -117,12 +93,6 @@ public class SearchPage extends BasePage {
         sortedPriceList = new LinkedList<>(unSortedPriceList);
         sortedPriceList.stream().sorted(Collections.reverseOrder());
     }
-
-//    private static double divider(String text) {
-//        String[] lines = text.split(WHITE_SPACE);
-//        return Double.valueOf(lines[0].replace(COMMA, POINT));
-//
-//    }
 
     public void clickSortingDropDownList() {
         click(sortingDropDownList);
@@ -166,34 +136,6 @@ public class SearchPage extends BasePage {
                 System.out.println("Found product without the discount");
             }
         });
-
-//        for (int i = 0; i < webElementList.size(); i++) {
-//            try{
-//                wait(regularPriceClass);
-//                wait(priceClass);
-//                wait(discountClass);
-////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-////                        By.className(regularPriceClass)));
-////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-////                        By.className(priceClass)));
-////                new WebDriverWait(webDriver,30).until(ExpectedConditions.visibilityOfElementLocated(
-////                        By.className(discountClass)));
-//
-//                WebElement regularPrice = webElementList.get(i).findElement(By.className(regularPriceClass));
-//                WebElement price = webElementList.get(i).findElement(By.className(priceClass));
-//                WebElement discount = webElementList.get(i).findElement(By.className(discountClass));
-//
-//                System.out.println("Regular price = " + divider(regularPrice.getText()) + ", discount price = " + divider(price.getText())
-//                + ", discount = " + discount.getText());
-//
-//                String result = discount.getText().substring(1, discount.getText().length()-1);
-//                double actualDiscount = Double.valueOf(result);
-//
-//                discountProducts.put(actualDiscount,new Price(divider(regularPrice.getText()),divider(price.getText())));
-//            } catch (Exception e) {
-//                System.out.println("Found product without discount");
-//            }
-//        }
     }
 
     public Map<Double,Price> getDiscountProducts() {

@@ -57,25 +57,10 @@ public class MainPage extends BasePage {
         return String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
     }
 
-    public List<WebElement> getListOfPopularGoods() {
-        wait(listOfPopularGoods);
-        return listOfPopularGoods;
-    }
-
     public WebElement getCurrencySignButton() {
         wait(currencySignButton);
         return currencySignButton;
     }
-
-//    public List<String> findCurrencySignInSearchedElement(String text) {
-//        wait(listOfPrices);
-//        List<String> list = new LinkedList<>();
-//
-//        listOfPrices.forEach(t -> {
-//            System.out.println("Element found " + text + " = " + t.getText().toLowerCase().contains(text));
-//            list.add(t.getText().toLowerCase().substring(t.getText().length()-1));});
-//        return list;
-//    }
 
     public List<WebElement> getListOfPrices() {
         wait(listOfPrices);
