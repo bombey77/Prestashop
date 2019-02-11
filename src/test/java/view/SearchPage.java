@@ -1,10 +1,12 @@
 package view;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.BaseTest;
@@ -56,25 +58,30 @@ public class SearchPage extends BasePage {
     }
 
     public void searchByCatalog(String text) {
-        clear(searchField);
+        wait.until(ExpectedConditions.elementToBeClickable(searchField)).clear();
+        //clear(searchField);
         searchField.sendKeys(text.toLowerCase());
-        click(searchButton);
+        wait.until(ExpectedConditions.elementToBeClickable(searchButton)).click();
+//        click(searchButton);
     }
 
     public List<WebElement> getListOfSearchedElements() {
-        wait(listOfSearchedElements);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfSearchedElements)));
+//        wait(listOfSearchedElements);
         return listOfSearchedElements;
     }
 
     public int getCountOfSearchedElements() {
-        wait(countOfSearchedElements);
+        wait.until(ExpectedConditions.visibilityOf(countOfSearchedElements));
+//        wait(countOfSearchedElements);
         String[] countOfElementsText = countOfSearchedElements.getText().split(WHITE_SPACE);
         return Integer.valueOf(countOfElementsText[1].substring(0, countOfElementsText[1].length() -1));
     }
 
     public List<String> findTextInSearchedElements(String text) {
         List<String> list = new LinkedList<>();
-        wait(listOfSearchedElements);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfSearchedElements)));
+//        wait(listOfSearchedElements);
         listOfSearchedElements.forEach(textInElement -> {
             boolean validValue = textInElement.getText().toLowerCase().contains(text);
             System.out.println("Element found " + text + " = "
@@ -86,7 +93,8 @@ public class SearchPage extends BasePage {
     }
 
     public void sortingGoodsByPrice() {
-        wait(listOfPrices);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfPrices)));
+//        wait(listOfPrices);
         unSortedPriceList = new LinkedList<>();
         listOfPrices.forEach(element -> unSortedPriceList.add(Double.valueOf(element.getText()
                 .substring(0, element.getText().length()-2).replace(COMMA,POINT))));
@@ -95,22 +103,20 @@ public class SearchPage extends BasePage {
     }
 
     public void clickSortingDropDownList() {
-        click(sortingDropDownList);
+        wait.until(ExpectedConditions.visibilityOf(sortingDropDownList)).click();
+//        click(sortingDropDownList);
     }
 
     public void clickSortingDropDownListItemMaxToMin() {
-        click(sortingGoodsFromMaxToMinPriceListItem);
-    }
+        wait.until(ExpectedConditions.visibilityOf(sortingGoodsFromMaxToMinPriceListItem)).click();
+//        click(sortingGoodsFromMaxToMinPriceListItem);
+        wait.until(ExpectedConditions.attributeContains(sortingGoodsFromMaxToMinPriceListItem, "class", "current"));
+}
 
     public void findGoodsWithDiscount() {
         discountProducts = new HashMap<>();
-        wait(listOfSearchedElements);
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfSearchedElements)));
+//        wait(listOfSearchedElements);
 
         String regularPriceClass = "regular-price";
         String priceClass = "price";
@@ -118,7 +124,10 @@ public class SearchPage extends BasePage {
 
         listOfSearchedElements.forEach(element -> {
             try {
-                wait(regularPriceClass,priceClass,discountClass);
+                wait.until(ExpectedConditions.presenceOfElementLocated(By.className(regularPriceClass)));
+                wait.until(ExpectedConditions.presenceOfElementLocated(By.className(priceClass)));
+                wait.until(ExpectedConditions.presenceOfElementLocated(By.className(discountClass)));
+//                wait(regularPriceClass,priceClass,discountClass);
                 System.out.println(
                     "Regular price = " + element.findElement(By.className(regularPriceClass)).getText()
                             .replace(COMMA,POINT).split(WHITE_SPACE)[0] +
@@ -132,10 +141,10 @@ public class SearchPage extends BasePage {
                                 .replace(COMMA,POINT).split(WHITE_SPACE)[0]),
                                 Double.valueOf(element.findElement(By.className(priceClass)).getText()
                                         .replace(COMMA,POINT).split(WHITE_SPACE)[0])));
-            } catch (Exception e) {
-                System.out.println("Found product without the discount");
-            }
+            } catch (Exception e) {}
+            System.out.println("Found product without the discount");
         });
+
     }
 
     public Map<Double,Price> getDiscountProducts() {
@@ -169,7 +178,8 @@ public class SearchPage extends BasePage {
     }
 
     public List<WebElement> getListOfPrices() {
-        wait(listOfPrices);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfPrices)));
+//        wait(listOfPrices);
         return listOfPrices;
     }
 

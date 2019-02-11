@@ -11,6 +11,8 @@ import java.util.List;
 
 public class BasePage extends BaseTest {
 
+    public static WebDriverWait wait = new WebDriverWait(webDriver, 30);
+
     public void wait(WebElement webElement) {
         new WebDriverWait(webDriver, 30)
                 .until(ExpectedConditions.visibilityOf(webElement));

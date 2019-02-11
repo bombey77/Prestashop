@@ -4,9 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Optional;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.LinkedList;
 import java.util.List;
 
 public class MainPage extends BasePage {
@@ -35,11 +34,13 @@ public class MainPage extends BasePage {
     }
 
     public void clickCurrencyDropDownButton() {
-        click(currencySignButton);
+        wait.until(ExpectedConditions.elementToBeClickable(currencySignButton)).click();
+//        click(currencySignButton);
     }
 
     public void clickCurrencyButton(CurrencyButton button) {
-        click(setCurrencyDropDownButton(button));
+        wait.until(ExpectedConditions.elementToBeClickable(setCurrencyDropDownButton(button))).click();
+//        click(setCurrencyDropDownButton(button));
     }
 
     public WebElement setCurrencyDropDownButton(CurrencyButton button) {
@@ -52,18 +53,21 @@ public class MainPage extends BasePage {
 
     public String getCurrencySign() {
         int one = 1;
-        wait(currencySignButton);
+        wait.until(ExpectedConditions.elementToBeClickable(currencySignButton));
+//        wait(currencySignButton);
         char[] arrayCurrencySignButton = currencySignButton.getText().toCharArray();
         return String.valueOf(arrayCurrencySignButton[arrayCurrencySignButton.length-one]);
     }
 
     public WebElement getCurrencySignButton() {
-        wait(currencySignButton);
+        wait.until(ExpectedConditions.elementToBeClickable(currencySignButton));
+//        wait(currencySignButton);
         return currencySignButton;
     }
 
     public List<WebElement> getListOfPrices() {
-        wait(listOfPrices);
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfPrices)));
+//        wait(listOfPrices);
         return listOfPrices;
     }
 }
