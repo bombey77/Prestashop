@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-02-11T19:03:21</date>
-  <millis>1549904601523</millis>
+  <date>2019-02-25T00:28:40</date>
+  <millis>1551047320684</millis>
   <sequence>1</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
@@ -13,86 +13,97 @@
   <message>Main Page opened</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:21</date>
-  <millis>1549904601950</millis>
+  <date>2019-02-25T00:28:41</date>
+  <millis>1551047321629</millis>
   <sequence>2</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
-  <message>checkDiscountValueTest TEST --- STARTED ---</message>
+  <message>checkProductRegularAndDiscountPriceAreExistTest TEST --- STARTED ---</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:21</date>
-  <millis>1549904601950</millis>
+  <date>2019-02-25T00:28:41</date>
+  <millis>1551047321630</millis>
   <sequence>3</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Clicking at the 'Currency Button'</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:22</date>
-  <millis>1549904602063</millis>
+  <date>2019-02-25T00:28:41</date>
+  <millis>1551047321988</millis>
   <sequence>4</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Clicking at the 'USD Currency Button'</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:24</date>
-  <millis>1549904604346</millis>
+  <date>2019-02-25T00:28:44</date>
+  <millis>1551047324936</millis>
   <sequence>5</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Clicking at the 'SEARCH FIELD'</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:24</date>
-  <millis>1549904604346</millis>
+  <date>2019-02-25T00:28:44</date>
+  <millis>1551047324936</millis>
   <sequence>6</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Writing into the 'SEARCH FIELD' text = dress</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:26</date>
-  <millis>1549904606248</millis>
+  <date>2019-02-25T00:28:46</date>
+  <millis>1551047326545</millis>
   <sequence>7</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Clicking at the 'Drop Down List'</message>
 </record>
 <record>
-  <date>2019-02-11T19:03:26</date>
-  <millis>1549904606362</millis>
+  <date>2019-02-25T00:28:46</date>
+  <millis>1551047326796</millis>
   <sequence>8</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.SearchPageTest</class>
-  <method>checkDiscountValueTest</method>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
   <thread>1</thread>
   <message>Clicking at the 'List Item Sorting From Max To Min price'</message>
 </record>
 <record>
-  <date>2019-02-11T19:04:19</date>
-  <millis>1549904659424</millis>
+  <date>2019-02-25T00:29:45</date>
+  <millis>1551047385597</millis>
   <sequence>9</sequence>
+  <logger>Prestashop</logger>
+  <level>INFO</level>
+  <class>tests.SearchPageTest</class>
+  <method>checkProductRegularAndDiscountPriceAreExistTest</method>
+  <thread>1</thread>
+  <message>checkProductRegularAndDiscountPriceAreExistTest TEST --- PASSED---</message>
+</record>
+<record>
+  <date>2019-02-25T00:29:46</date>
+  <millis>1551047386338</millis>
+  <sequence>10</sequence>
   <logger>Prestashop</logger>
   <level>INFO</level>
   <class>tests.BaseTest</class>

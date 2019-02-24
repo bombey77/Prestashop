@@ -114,9 +114,16 @@ public class SearchPage extends BasePage {
 }
 
     public void findGoodsWithDiscount() {
+
         discountProducts = new HashMap<>();
         wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(listOfSearchedElements)));
 //        wait(listOfSearchedElements);
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         String regularPriceClass = "regular-price";
         String priceClass = "price";
@@ -152,9 +159,16 @@ public class SearchPage extends BasePage {
     }
 
     public void checkDiscountValue() {
+
         BigDecimal regularPrice;
         BigDecimal price;
         discounts = new HashMap<>();
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         for (Double discount : discountProducts.keySet()) {
             regularPrice = new BigDecimal(discountProducts.get(discount).getRegularPrice());
